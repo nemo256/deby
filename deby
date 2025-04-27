@@ -52,7 +52,7 @@ function logo() {
 ████   ██      ██ ████  ████ ██  ████     ██   ██ ██    ██    ██    ██      
 ██ ██  ██  █████  ██ ████ ██ ██ ██ ██     ██   ██ ██    ██    ██    ███████ 
 ██  ██ ██      ██ ██  ██  ██ ████  ██     ██   ██ ██    ██    ██         ██ 
-██   ████ ██████  ██      ██  ██████      ██████   ██████     ██    ███████ 
+██   ████ ██████  ██      ██   斗争       ██████   ██████     ██    ███████ 
 "
     local logo_width=$(echo "$logo" | awk '{ if (length > max) max = length } END { print max }')
 
@@ -226,7 +226,7 @@ log_result "cd ../tremc && make install" "Install tremc"
 
 logo "Installing alder..."
 log_result "npm install -g @aweary/alder" "Install alder"
-logo "Installing weather-cli..."
+logo serra "Installing weather-cli..."
 log_result "npm install -g weather-cli" "Install weather-cli"
 
 logo "Restoring home directory..."
@@ -240,48 +240,48 @@ echo "==== Configuration Cleanup" >> "$LOG_FILE"
 log_result "su - \"$USERNAME\" -c \"rm -fvr ~/.bash* ~/.gitconfig ~/.config/*\"" "Remove default configs"
 
 # Get list of programs
-programs=$(su - "$USERNAME" -c "find ~/dots/config -maxdepth 1 -mindepth 1 -type d -printf '%f\n'")
+programs=$(find "/root/dots/config" -maxdepth 1 -mindepth 1 -type d -printf "%f\n")
 echo "==== Stowing Configurations" >> "$LOG_FILE"
 echo "Programs: $programs" >> "$LOG_FILE"
 
 logo "Stowing configuration files..."
 for program in ${programs}; do
     if [[ ${program} != "irssi" ]]; then
-        log_result "su - \"$USERNAME\" -c \"stow -vd ~/dots/config/ -t ~ ${program}\"" "Stow $program"
+        log_result "su - \"$USERNAME\" -c \"stow -vd /root/dots/config/ -t ~ ${program}\"" "Stow $program"
     fi
 done
 
-logo "Irssi configuration..."
-echo "==== Irssi Configuration" >> "$LOG_FILE"
-log_result "su - \"$USERNAME\" -c \"cp -fvr ~/dots/config/irssi/.irssi ~\"" "Copy irssi config"
-log_result "su - \"$USERNAME\" -c \"sed -i 's/sasl_username = \".*\"/sasl_username = \"$IRSSI_USERNAME\"/' ~/.irssi/config\"" "Set irssi username"
-log_result "su - \"$USERNAME\" -c \"sed -i 's/sasl_password = \".*\"/sasl_password = \"$IRSSI_PASSWORD\"/' ~/.irssi/config\"" "Set irssi password"
-log_result "su - \"$USERNAME\" -c \"sed -i 's/nick = \".*\"/nick = \"$IRSSI_USERNAME\"/' ~/.irssi/config\"" "Set irssi nick"
+# logo "Irssi configuration..."
+# echo "==== Irssi Configuration" >> "$LOG_FILE"
+# log_result "su - \"$USERNAME\" -c \"cp -fvr ~/dots/config/irssi/.irssi ~\"" "Copy irssi config"
+# log_result "su - \"$USERNAME\" -c \"sed -i 's/sasl_username = \".*\"/sasl_username = \"$IRSSI_USERNAME\"/' ~/.irssi/config\"" "Set irssi username"
+# log_result "su - \"$USERNAME\" -c \"sed -i 's/sasl_password = \".*\"/sasl_password = \"$IRSSI_PASSWORD\"/' ~/.irssi/config\"" "Set irssi password"
+# log_result "su - \"$USERNAME\" -c \"sed -i 's/nick = \".*\"/nick = \"$IRSSI_USERNAME\"/' ~/.irssi/config\"" "Set irssi nick"
 
 logo "Make binary files executable..."
 echo "==== Binary Permissions" >> "$LOG_FILE"
 log_result "su - \"$USERNAME\" -c \"chmod -R 755 ~/bin\"" "Set bin permissions"
 
-logo "Vimy configuration..."
-echo "==== Vimy Configuration" >> "$LOG_FILE"
-log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/vimy ~/.config/nvim\"" "Clone vimy"
-log_result "su - \"$USERNAME\" -c \"git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim\"" "Clone packer.nvim"
-log_result "su - \"$USERNAME\" -c \"nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'\"" "Run PackerSync"
-log_result "su - \"$USERNAME\" -c \"mkdir ~/.config/nvim/session\"" "Create nvim session directory"
+# logo "Vimy configuration..."
+# echo "==== Vimy Configuration" >> "$LOG_FILE"
+# log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/vimy ~/.config/nvim\"" "Clone vimy"
+# log_result "su - \"$USERNAME\" -c \"git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim\"" "Clone packer.nvim"
+# log_result "su - \"$USERNAME\" -c \"nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'\"" "Run PackerSync"
+# log_result "su - \"$USERNAME\" -c \"mkdir ~/.config/nvim/session\"" "Create nvim session directory"
 
 logo "Ranger Configuration..."
 echo "==== Ranger Configuration" >> "$LOG_FILE"
 log_result "su - \"$USERNAME\" -c \"git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons\"" "Clone ranger_devicons"
 log_result "su - \"$USERNAME\" -c \"cd ~/.config/ranger/plugins/ranger_devicons && python -m devicons\"" "Install ranger_devicons"
 
-logo "Protonvpn configuration..."
-echo "==== ProtonVPN Configuration" >> "$LOG_FILE"
-log_result "apt install -y openvpn dialog python3-pythondialog" "Install ProtonVPN dependencies"
-log_result "curl -fsSL https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3-3_all.deb -o protonvpn.deb" "Download ProtonVPN package"
-log_result "dpkg -i protonvpn.deb && rm protonvpn.deb" "Install ProtonVPN package"
-log_result "apt update" "Update package list after ProtonVPN"
-log_result "apt install -y protonvpn-cli" "Install ProtonVPN CLI"
-log_result "su - \"$USERNAME\" -c \"protonvpn-cli config --vpn-accelerator enable\"" "Enable VPN accelerator"
+# logo "Protonvpn configuration..."
+# echo "==== ProtonVPN Configuration" >> "$LOG_FILE"
+# log_result "apt install -y openvpn dialog python3-pythondialog" "Install ProtonVPN dependencies"
+# log_result "curl -fsSL https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3-3_all.deb -o protonvpn.deb" "Download ProtonVPN package"
+# log_result "dpkg -i protonvpn.deb && rm protonvpn.deb" "Install ProtonVPN package"
+# log_result "apt update" "Update package list after ProtonVPN"
+# log_result "apt install -y protonvpn-cli" "Install ProtonVPN CLI"
+# log_result "su - \"$USERNAME\" -c \"protonvpn-cli config --vpn-accelerator enable\"" "Enable VPN accelerator"
 
 logo "Ly configuration..."
 echo "==== Ly Configuration" >> "$LOG_FILE"
