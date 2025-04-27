@@ -23,7 +23,7 @@ man-db
 manpages
 mtools
 nfs-common
-nilfs-utils
+#nilfs-utils
 openssh-client
 openvpn
 python3-pip
@@ -40,19 +40,18 @@ cmatrix
 docker.io
 dsniff
 dunst
-exfat-utils
 feh
 firefox-esr
 fzf
 git
 netcat-traditional
-gptfdisk
+gdisk
 libgtk2.0-0
 httpie
 htop
 irssi
 lolcat
-lua-luarocks
+luarocks
 lynx
 mpc
 mpd
@@ -81,7 +80,7 @@ transmission-cli
 tree
 #fonts-firacode
 unclutter
-unrar
+unrar-free
 unzip
 upower
 libwebkit2gtk-4.0-37
@@ -107,7 +106,7 @@ x11-utils
 #       Drivers       #
 #######################
 intel-microcode
-libva-intel-driver
-libva-utils
-libvdpau-va-gl
+intel-media-va-driver
+#libva-utils
+libvdpau-va-gl1
 xserver-xorg-video-intel
