@@ -10,6 +10,8 @@ function log_result {
     local command="$1"
     local section="$2"
     local suppress_output="$3"
+    local critical="$4"
+    local status
     if [ "$suppress_output" = "1" ]; then
         LAST_OUTPUT=$(eval "$command" > /tmp/cmd_output 2>&1; tail -n 1 /tmp/cmd_output || echo "")
         rm -f /tmp/cmd_output
@@ -20,6 +22,7 @@ function log_result {
         else
             echo "$section: Error" >> "$LOG_FILE"
             LAST_OUTPUT=${LAST_OUTPUT:-"[No output]"}
+            [ "$critical" = "1" ] && exit 1
             return 1
         fi
     else
@@ -33,6 +36,7 @@ function log_result {
         else
             echo "$section: Error" >> "$LOG_FILE"
             LAST_OUTPUT=${LAST_OUTPUT:-"[No output]"}
+            [ "$critical" = "1" ] && exit 1
             return 1
         fi
     fi
@@ -98,8 +102,8 @@ prompt "Github token (optional)" TOKEN "None"
 if ! id "$USERNAME" &>/dev/null; then
     logo "Creating user $USERNAME..."
     echo "==== Create User" >> "$LOG_FILE"
-    log_result "useradd -m -s \"$SHELL\" \"$USERNAME\"" "Create user $USERNAME" || exit 1
-    log_result "passwd \"$USERNAME\"" "Set password for $USERNAME" || exit 1
+    log_result "useradd -m -s \"$SHELL\" \"$USERNAME\"" "Create user $USERNAME" 0 1 || exit 1
+    log_result "passwd \"$USERNAME\"" "Set password for $USERNAME" 0 1 || exit 1
 fi
 
 # Update package list
@@ -110,7 +114,7 @@ log_result "apt update" "Update package list"
 # Install build essentials and git for compiling software
 logo "Installing build essentials and git..."
 echo "=== Install Build Essentials" >> "$LOG_FILE"
-log_result "apt install -y build-essential git curl" "Install build essentials and git"
+log_result "apt install -y build-essential git curl" "Install build essentials and git" 1
 
 if [[ ! -f "packages" ]]; then
     logo "Error: packages file not found!"
@@ -118,6 +122,11 @@ if [[ ! -f "packages" ]]; then
     echo "Check packages file: Error" >> "$LOG_FILE"
     exit 1
 fi
+
+# Configure Debian Sid for ly
+logo "Configuring Debian Sid repository..."
+echo "=== Configure Debian Sid" >> "$LOG_FILE"
+log_result "echo 'deb http://deb.debian.org/debian sid main' > /etc/apt/sources.list.d/sid.list && echo -e 'Package: *\nPin: release a=sid\nPin-Priority: 100' > /etc/apt/preferences.d/sid && apt update" "Configure Sid repository"
 
 logo "Installing packages..."
 echo "=== Installing Packages" >> "$LOG_FILE"
@@ -136,7 +145,12 @@ log_result "echo \"$USERNAME ALL=(ALL:ALL) NOPASSWD: ALL\" > /etc/sudoers.d/nopa
 
 logo "Stowing bin directory..."
 echo "=== Stow Bin Directory" >> "$LOG_FILE"
-log_result "su - \"$USERNAME\" -c \"stow -vd /root/dots/config/ -t ~ bin\"" "Stow bin directory"
+if [ -d "/root/dots/config/bin" ]; then
+    log_result "su - \"$USERNAME\" -c \"stow -vd /root/dots/config/ -t ~ bin\"" "Stow bin directory"
+else
+    log_result "su - \"$USERNAME\" -c \"mkdir -p ~/bin\"" "Create bin directory"
+    echo "Warning: /root/dots/config/bin not found, created ~/bin instead" >> "$LOG_FILE"
+fi
 
 logo "Adding yamete kudasai sound on usb mount / unmount..."
 echo "=== USB Sound Configuration" >> "$LOG_FILE"
@@ -185,7 +199,7 @@ logo "Font configuration..."
 echo "=== Font Configuration" >> "$LOG_FILE"
 {
     log_result "mkdir -p /usr/share/fonts/truetype" "Create fonts directory" &&
-    log_result "cd /usr/share/fonts/truetype && timeout 30s curl -fLo 'FiraCodeNerdFont-Bold.ttf' https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/FiraCode/Bold/complete/Fira%20Code%20Bold%20Nerd%20Font%20Complete.ttf" "Download font" &&
+    log_result "cd /usr/share/fonts/truetype && timeout 30s curl -fLo 'FiraCode.zip' https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/FiraCode.zip && unzip -o FiraCode.zip 'FiraCodeNerdFont-Bold.ttf' && rm FiraCode.zip" "Download and install font" &&
     log_result "fc-cache -fv" "Update font cache" &&
     log_result "cd /home/$USERNAME" "Return to user home"
 } || echo "Font configuration: Error" >> "$LOG_FILE"
@@ -197,24 +211,64 @@ log_result "su - \"$USERNAME\" -c \"mkdir -p ~/.build\"" "Create build directory
 logo "Cloning repositories..."
 echo "=== Cloning Repositories" >> "$LOG_FILE"
 {
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/tily\"" "Clone tily" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/st\"" "Clone st" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/dmenu\"" "Clone dmenu" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/slock\"" "Clone slock" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/slstatus\"" "Clone slstatus" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/fetchy\"" "Clone fetchy" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/pystardust/ani-cli\"" "Clone ani-cli" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/xorg62/tty-clock\"" "Clone tty-clock" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/muquit/grabc\"" "Clone grabc" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/tremc/tremc\"" "Clone tremc"
+    if [ ! -d "/home/$USERNAME/.build/tily" ]; then
+        log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/tily\"" "Clone tily"
+    else
+        echo "Clone tily: Skipped - directory exists" >> "$LOG_FILE"
+    fi
+    if [ ! -d "/home/$USERNAME/.build/st" ]; then
+        log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/st\"" "Clone st"
+    else
+        echo "Clone st: Skipped - directory exists" >> "$LOG_FILE"
+    fi
+    if [ ! -d "/home/$USERNAME/.build/dmenu" ]; then
+        log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/dmenu\"" "Clone dmenu"
+    else
+        echo "Clone dmenu: Skipped - directory exists" >> "$LOG_FILE"
+    fi
+    if [ ! -d "/home/$USERNAME/.build/slock" ]; then
+        log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/slock\"" "Clone slock"
+    else
+        echo "Clone slock: Skipped - directory exists" >> "$LOG_FILE"
+    fi
+    if [ ! -d "/home/$USERNAME/.build/slstatus" ]; then
+        log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/slstatus\"" "Clone slstatus"
+    else
+        echo "Clone slstatus: Skipped - directory exists" >> "$LOG_FILE"
+    fi
+    if [ ! -d "/home/$USERNAME/.build/fetchy" ]; then
+        log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/fetchy\"" "Clone fetchy"
+    else
+        echo "Clone fetchy: Skipped - directory exists" >> "$LOG_FILE"
+    fi
+    if [ ! -d "/home/$USERNAME/.build/ani-cli" ]; then
+        log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/pystardust/ani-cli\"" "Clone ani-cli"
+    else
+        echo "Clone ani-cli: Skipped - directory exists" >> "$LOG_FILE"
+    fi
+    if [ ! -d "/home/$USERNAME/.build/tty-clock" ]; then
+        log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/xorg62/tty-clock\"" "Clone tty-clock"
+    else
+        echo "Clone tty-clock: Skipped - directory exists" >> "$LOG_FILE"
+    fi
+    if [ ! -d "/home/$USERNAME/.build/grabc" ]; then
+        log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/muquit/grabc\"" "Clone grabc"
+    else
+        echo "Clone grabc: Skipped - directory exists" >> "$LOG_FILE"
+    fi
+    if [ ! -d "/home/$USERNAME/.build/tremc" ]; then
+        log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/tremc/tremc\"" "Clone tremc"
+    else
+        echo "Clone tremc: Skipped - directory exists" >> "$LOG_FILE"
+    fi
 } || echo "Cloning repositories: Error" >> "$LOG_FILE"
 
 logo "Installing repositories..."
 echo "=== Installing Repositories" >> "$LOG_FILE"
 {
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build/tily && make clean && sudo make install\"" "Install tily" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build/st && make clean && sudo make install\"" "Install st" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build/dmenu && make clean && sudo make install\"" "Install dmenu" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build/tily && make clean && sudo make install\"" "Install tily" 0 1 &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build/st && make clean && sudo make install\"" "Install st" 0 1 &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build/dmenu && make clean && sudo make install\"" "Install dmenu" 0 1 &&
     log_result "su - \"$USERNAME\" -c \"cd ~/.build/slock && make clean && sudo make install\"" "Install slock" &&
     log_result "su - \"$USERNAME\" -c \"cd ~/.build/slstatus && make clean && sudo make install\"" "Install slstatus" &&
     log_result "su - \"$USERNAME\" -c \"cd ~/.build/fetchy && make clean && sudo make install\"" "Install fetchy" &&
@@ -226,17 +280,17 @@ echo "=== Installing Repositories" >> "$LOG_FILE"
 
 logo "Installing alder..."
 echo "=== Install Alder" >> "$LOG_FILE"
-log_result "yarn global add @aweary/alder" "Install alder"
+log_result "yarnpkg global add @aweary/alder" "Install alder"
 
 logo "Installing weather-cli..."
 echo "=== Install Weather CLI" >> "$LOG_FILE"
-log_result "yarn global add weather-cli" "Install weather-cli"
+log_result "yarnpkg global add weather-cli" "Install weather-cli"
 
 logo "Installing Ly display manager..."
 echo "=== Ly Configuration" >> "$LOG_FILE"
 {
-    log_result "apt install -y ly" "Install Ly" &&
-    log_result "systemctl enable ly" "Enable Ly service"
+    log_result "apt install -y ly" "Install Ly" 1 1 &&
+    log_result "systemctl enable ly" "Enable Ly service" 0 1
 } || echo "Ly configuration: Error" >> "$LOG_FILE"
 
 logo "Restoring home directory..."
@@ -254,7 +308,7 @@ log_result "su - \"$USERNAME\" -c \"rm -fvr ~/.bash* ~/.gitconfig ~/.config/*\""
 # Get list of programs
 programs=$(find "/root/dots/config" -maxdepth 1 -mindepth 1 -type d -printf "%f\n")
 echo "=== Stowing Configurations" >> "$LOG_FILE"
-if [ -n "$programs" ]; then
+if [ -d "/root/dots/config" ] && [ -n "$programs" ]; then
     logo "Stowing configuration files..."
     for program in ${programs}; do
         if [[ ${program} != "irssi" && ${program} != "bin" ]]; then
@@ -262,7 +316,7 @@ if [ -n "$programs" ]; then
         fi
     done
 else
-    echo "Stowing configurations: Error" >> "$LOG_FILE"
+    echo "Stowing configurations: Error - /root/dots/config missing or empty" >> "$LOG_FILE"
 fi
 
 logo "Make binary files executable..."
@@ -271,11 +325,11 @@ log_result "su - \"$USERNAME\" -c \"chmod -R 755 ~/bin\"" "Set bin permissions"
 
 logo "Ranger Configuration..."
 echo "=== Ranger Configuration" >> "$LOG_FILE"
-log_result "su - \"$USERNAME\" -c \"git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons && cd ~/.config/ranger/plugins/ranger_devicons && python -m devicons\"" "Set ranger config"
+log_result "su - \"$USERNAME\" -c \"git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons && cd ~/.config/ranger/plugins/ranger_devicons && python3 -m devicons\"" "Set ranger config"
 
 logo "Managing Essential Services..."
 echo "=== Service Management" >> "$LOG_FILE"
-log_result "systemctl disable transmission-daemon && systemctl enable bluetooth && systemctl enable slock@$USERNAME && systemctl enable ly" "Manage services"
+log_result "systemctl enable bluetooth && systemctl enable slock@$USERNAME && systemctl enable ly" "Manage services"
 
 logo "Installing disable_prochot service..."
 echo "=== Disable Prochot Service" >> "$LOG_FILE"

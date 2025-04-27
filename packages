@@ -26,14 +26,15 @@ libxft-dev
 libxinerama1
 libxinerama-dev
 libxrandr-dev
+libharfbuzz-dev
 ly
 man-db
 manpages
 mtools
 nfs-common
-#nilfs-utils
 openssh-client
 openvpn
+python3
 python3-pip
 squashfs-tools
 sudo
@@ -51,7 +52,7 @@ docker.io
 dsniff
 dunst
 feh
-# chromium
+chromium
 fzf
 git
 netcat-traditional
@@ -74,21 +75,17 @@ net-tools
 newsboat
 nmap
 nodejs
-#fonts-noto
-#fonts-noto-cjk
-#fonts-noto-cjk-extra
+npm
 picom
 ranger
 rsync
 scrot
 stow
 sxiv
-#fonts-terminus
 silversearcher-ag
 tmux
 transmission-cli
 tree
-#fonts-firacode
 unclutter
 unrar-free
 unzip
@@ -117,6 +114,5 @@ x11-utils
 #######################
 intel-microcode
 intel-media-va-driver
-#libva-utils
 libvdpau-va-gl1
 xserver-xorg-video-intel
