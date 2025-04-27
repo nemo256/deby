@@ -1,0 +1,309 @@
+#!/usr/bin/env bash
+
+# Setup log file
+LOG_FILE="log"
+echo "Deby Script Execution - $(date)" > "$LOG_FILE"
+echo "===================================" >> "$LOG_FILE"
+
+# Colors for logging
+GREEN="\033[32m"
+RED="\033[31m"
+RESET="\033[0m"
+
+# Log command result
+function log_result {
+    local command="$1"
+    local section="$2"
+    echo "---- $section" >> "$LOG_FILE"
+    echo "Command: $command" >> "$LOG_FILE"
+    if eval "$command" >> "$LOG_FILE" 2>&1; then
+        echo -e "${GREEN}Ok${RESET}" >> "$LOG_FILE"
+    else
+        echo -e "${RED}Err${RESET}" >> "$LOG_FILE"
+    fi
+    echo "" >> "$LOG_FILE"
+}
+
+# Prompt to gather data
+function prompt {
+    local message=$1
+    local variable=$2
+    local default=$3
+    tput setaf 15
+    read -p "${message} (default: ${default}): " value
+    tput sgr0
+    eval $variable=${value:-$default}
+    echo "---- Prompt: $message" >> "$LOG_FILE"
+    echo "Value: ${value:-$default}" >> "$LOG_FILE"
+    echo "" >> "$LOG_FILE"
+}
+
+# Cool logo message
+function logo() {
+    local text=$1
+
+    local blue=$(tput setaf 4; tput bold)
+    local indigo=$(tput setaf 5; tput bold)
+    local text_color=$(tput bold)
+
+    local screen_width=$(tput cols)
+    local logo="
+███    ██ ██████  ███    ███  ██████      ██████   ██████  ████████ ███████ 
+████   ██      ██ ████  ████ ██  ████     ██   ██ ██    ██    ██    ██      
+██ ██  ██  █████  ██ ████ ██ ██ ██ ██     ██   ██ ██    ██    ██    ███████ 
+██  ██ ██      ██ ██  ██  ██ ████  ██     ██   ██ ██    ██    ██         ██ 
+██   ████ ██████  ██      ██  ██████      ██████   ██████     ██    ███████ 
+"
+    local logo_width=$(echo "$logo" | awk '{ if (length > max) max = length } END { print max }')
+
+    clear
+
+    IFS=$'\n'
+    printf "\n"
+    for line in $logo
+    do
+        printf "%*s%s\n" $((($screen_width - ${#line} - 1) / 2)) "" "$indigo$line"
+    done
+
+    printf "\n%*s%s%s%*s\n\n" $((($screen_width - ${#text} - 1) / 2)) "" "$blue" "$text" $((($screen_width + ${#text} + ${#text} - $logo_width) / 2)) ""
+
+    tput sgr0
+    echo "==== Display Logo: $text" >> "$LOG_FILE"
+    echo "" >> "$LOG_FILE"
+}
+
+logo "Press any key to continue..."
+read
+
+# Information gathering
+echo "==== Information Gathering" >> "$LOG_FILE"
+prompt "Username" USERNAME "user"
+prompt "Shell" SHELL /bin/bash
+prompt "Keymap" KEYMAP us
+prompt "Console font" CONSOLE_FONT Terminus32x16
+prompt "IRSSI username" IRSSI_USERNAME "None"
+prompt "IRSSI password" IRSSI_PASSWORD "None"
+prompt "Github token (optional)" TOKEN "None"
+
+# Ensure user exists
+if ! id "$USERNAME" &>/dev/null; then
+    logo "Creating user $USERNAME..."
+    log_result "useradd -m -s \"$SHELL\" \"$USERNAME\"" "Create user $USERNAME"
+    log_result "passwd \"$USERNAME\"" "Set password for $USERNAME"
+fi
+
+# Update package list
+logo "Updating package list..."
+log_result "apt update" "Update package list"
+
+# Install build essentials and git for compiling software
+logo "Installing build essentials and git..."
+log_result "apt install -y build-essential git curl" "Install build essentials and git"
+
+if [[ ! -f "packages" ]]; then
+    logo "Error: packages file not found!"
+    echo "==== Error" >> "$LOG_FILE"
+    echo -e "${RED}Err: packages file not found${RESET}" >> "$LOG_FILE"
+    exit 1
+fi
+
+logo "Installing packages..."
+echo "==== Installing Packages" >> "$LOG_FILE"
+while read package
+do
+    if [[ $package == "" ]] || [[ $package == \#* ]]; then
+        continue
+    fi
+    logo "Installing: $package..."
+    log_result "apt install -y \"$package\"" "Install: $package"
+done < packages
+
+logo "Switch shell to '${SHELL}'..."
+echo "==== Shell Configuration" >> "$LOG_FILE"
+log_result "chsh -s \"$SHELL\" root" "Set root shell to $SHELL"
+log_result "chsh -s \"$SHELL\" \"$USERNAME\"" "Set $USERNAME shell to $SHELL"
+
+logo "Setting keymap and console font..."
+echo "==== Keymap and Console Font" >> "$LOG_FILE"
+log_result "echo 'XKBMODEL=pc105' > /etc/default/keyboard" "Set keyboard model"
+log_result "echo 'XKBLAYOUT=$KEYMAP' >> /etc/default/keyboard" "Set keymap to $KEYMAP"
+log_result "echo 'FONT=$CONSOLE_FONT' > /etc/default/console-setup" "Set console font to $CONSOLE_FONT"
+log_result "echo 'CHARMAP=UTF-8' >> /etc/default/console-setup" "Set console charset"
+log_result "dpkg-reconfigure -f noninteractive keyboard-configuration" "Apply keyboard configuration"
+log_result "dpkg-reconfigure -f noninteractive console-setup" "Apply console setup"
+
+logo "Adding no password sudo rights for $USERNAME..."
+echo "==== Sudo Configuration" >> "$LOG_FILE"
+log_result "echo \"$USERNAME ALL=(ALL:ALL) NOPASSWD: ALL\" > /etc/sudoers.d/nopasswd_sudo" "Create sudoers file"
+log_result "chmod 440 /etc/sudoers.d/nopasswd_sudo" "Set sudoers file permissions"
+
+logo "Adding yamete kudasai sound on usb mount / unmount..."
+echo "==== USB Sound Configuration" >> "$LOG_FILE"
+log_result "echo -ne \"KERNEL==\\\"sd*\\\", SUBSYSTEM==\\\"block\\\", ENV{DEVTYPE}==\\\"partition\\\", ACTION==\\\"add\\\", ENV{ID_FS_TYPE}!=\\\"vfat\\\", ENV{ID_FS_USAGE}==\\\"filesystem\\\", RUN+=\\\"/usr/bin/aplay /home/$USERNAME/bin/sound/yamete.wav\\\"\\nKERNEL==\\\"sd*\\\", SUBSYSTEM==\\\"block\\\", ENV{DEVTYPE}==\\\"partition\\\", ACTION==\\\"remove\\\", ENV{ID_FS_TYPE}!=\\\"vfat\\\", ENV{ID_FS_USAGE}==\\\"filesystem\\\", RUN+=\\\"/usr/bin/aplay /home/$USERNAME/bin/sound/ahh.wav\\\"\\n\" > /etc/udev/rules.d/99-usb-sound.rules" "Create udev rules"
+log_result "udevadm control --reload-rules" "Reload udev rules"
+
+logo "Automount USB drive..."
+echo "==== USB Automount" >> "$LOG_FILE"
+log_result "echo 'UUID=CA18-653E /mnt vfat noauto,nofail,systemd.automount,systemd.idle-timeout=2,systemd.device-timeout=2 0 0' >> /etc/fstab" "Update fstab"
+log_result "systemctl daemon-reload" "Reload systemd"
+log_result "systemctl restart local-fs.target" "Restart local-fs.target"
+
+logo "Disabling Screen Tear..."
+echo "==== Screen Tear Configuration" >> "$LOG_FILE"
+log_result "mkdir -p /etc/X11/xorg.conf.d" "Create Xorg config directory"
+log_result "echo -ne 'Section \"Device\"\n  Identifier \"Intel Graphics\"\n  Driver \"intel\"\n  Option \"TearFree\" \"true\"\nEndSection\n' > /etc/X11/xorg.conf.d/20-intel.conf" "Create Intel graphics config"
+
+logo "Updating Touchpad Configuration..."
+echo "==== Touchpad Configuration" >> "$LOG_FILE"
+log_result "echo -ne 'Section \"InputClass\"\n    Identifier \"libinput touchpad catchall\"\n    MatchIsTouchpad \"on\"\n    MatchDevicePath \"/dev/input/event*\"\n    Option \"Tapping\" \"True\"\n    Option \"TappingDrag\" \"True\"\n    Option \"ScrollMethod\" \"Twofinger\"\n    Option \"NaturalScrolling\" \"False\"\n    Option \"DisableWhileTyping\" \"False\"\n    Driver \"libinput\"\nEndSection\n' > /etc/X11/xorg.conf.d/40-libinput.conf" "Create touchpad config"
+
+logo "Slock Configuration..."
+echo "==== Slock Configuration" >> "$LOG_FILE"
+log_result "echo -ne '[Unit]\nDescription=Lock X session using slock for user %i\nBefore=sleep.target\n\n[Service]\nUser=%i\nEnvironment=DISPLAY=:0\nExecStartPre=/usr/bin/xset dpms force suspend\nExecStart=/usr/local/bin/slock\n\n[Install]\nWantedBy=sleep.target\n' > /etc/systemd/system/slock@.service" "Create slock service"
+
+logo "Github configuration..."
+echo "==== Github Configuration" >> "$LOG_FILE"
+if [ "$TOKEN" != "None" ]; then
+    log_result "su - \"$USERNAME\" -c \"echo -ne 'https://$USERNAME:$TOKEN@github.com' > ~/.git-credentials\"" "Create git credentials"
+    log_result "su - \"$USERNAME\" -c \"git config --global credential.helper store\"" "Set git credential helper"
+fi
+
+logo "Font configuration..."
+echo "==== Font Configuration" >> "$LOG_FILE"
+log_result "mkdir -p /usr/share/fonts/truetype" "Create fonts directory"
+log_result "cd /usr/share/fonts/truetype && curl -fLo 'FiraCodeNerdFont-Bold.ttf' https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/FiraCode/Bold/complete/Fira%20Code%20Bold%20Nerd%20Font%20Complete.ttf" "Download FiraCode font"
+log_result "fc-cache -fv" "Update font cache"
+log_result "cd /home/$USERNAME" "Return to user home"
+
+logo "Creating .build folder..."
+echo "==== Build Directory Setup" >> "$LOG_FILE"
+log_result "su - \"$USERNAME\" -c \"mkdir -p ~/.build\"" "Create .build directory"
+log_result "cd /home/$USERNAME/.build" "Change to .build directory"
+
+logo "Cloning tily (Custom dwm fork)..."
+echo "==== Cloning Repositories" >> "$LOG_FILE"
+log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/tily\"" "Clone tily"
+logo "Cloning st..."
+log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/st\"" "Clone st"
+logo "Cloning dmenu..."
+log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/dmenu\"" "Clone dmenu"
+logo "Cloning slock..."
+log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/slock\"" "Clone slock"
+logo "Cloning slstatus..."
+log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/slstatus\"" "Clone slstatus"
+logo "Cloning fetchy..."
+log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/fetchy\"" "Clone fetchy"
+logo "Cloning ani-cli..."
+log_result "su - \"$USERNAME\" -c \"git clone https://github.com/pystardust/ani-cli\"" "Clone ani-cli"
+logo "Cloning tty-clock..."
+log_result "su - \"$USERNAME\" -c \"git clone https://github.com/xorg62/tty-clock\"" "Clone tty-clock"
+logo "Cloning grabc..."
+log_result "su - \"$USERNAME\" -c \"git clone https://github.com/muquit/grabc\"" "Clone grabc"
+logo "Cloning tremc..."
+log_result "su - \"$USERNAME\" -c \"git clone https://github.com/tremc/tremc\"" "Clone tremc"
+
+logo "Installing tily..."
+echo "==== Installing Software" >> "$LOG_FILE"
+log_result "cd tily && make clean install" "Install tily"
+logo "Installing st..."
+log_result "cd ../st && make clean install" "Install st"
+logo "Installing dmenu..."
+log_result "cd ../dmenu && make clean install" "Install dmenu"
+logo "Installing slock..."
+log_result "cd ../slock && make clean install" "Install slock"
+logo "Installing slstatus..."
+log_result "cd ../slstatus && make clean install" "Install slstatus"
+logo "Installing fetchy..."
+log_result "cd ../fetchy && make clean install" "Install fetchy"
+logo "Installing ani-cli..."
+log_result "cd ../ani-cli && chmod +x ani-cli && cp -fvr ani-cli /usr/local/bin/ani-cli" "Install ani-cli"
+logo "Installing tty-clock..."
+log_result "cd ../tty-clock && make && make install" "Install tty-clock"
+logo "Installing grabc..."
+log_result "cd ../grabc && make && make install" "Install grabc"
+logo "Installing tremc..."
+log_result "cd ../tremc && make install" "Install tremc"
+
+logo "Installing alder..."
+log_result "npm install -g @aweary/alder" "Install alder"
+logo "Installing weather-cli..."
+log_result "npm install -g weather-cli" "Install weather-cli"
+
+logo "Restoring home directory..."
+echo "==== Home Directory Setup" >> "$LOG_FILE"
+log_result "su - \"$USERNAME\" -c \"mkdir -p ~/dl ~/vids ~/work\"" "Create home directories"
+logo "Cloning wals..."
+log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/wals ~/wals\"" "Clone wals"
+
+logo "Removing default configuration files..."
+echo "==== Configuration Cleanup" >> "$LOG_FILE"
+log_result "su - \"$USERNAME\" -c \"rm -fvr ~/.bash* ~/.gitconfig ~/.config/*\"" "Remove default configs"
+
+# Get list of programs
+programs=$(su - "$USERNAME" -c "find ~/dots/config -maxdepth 1 -mindepth 1 -type d -printf '%f\n'")
+echo "==== Stowing Configurations" >> "$LOG_FILE"
+echo "Programs: $programs" >> "$LOG_FILE"
+
+logo "Stowing configuration files..."
+for program in ${programs}; do
+    if [[ ${program} != "irssi" ]]; then
+        log_result "su - \"$USERNAME\" -c \"stow -vd ~/dots/config/ -t ~ ${program}\"" "Stow $program"
+    fi
+done
+
+logo "Irssi configuration..."
+echo "==== Irssi Configuration" >> "$LOG_FILE"
+log_result "su - \"$USERNAME\" -c \"cp -fvr ~/dots/config/irssi/.irssi ~\"" "Copy irssi config"
+log_result "su - \"$USERNAME\" -c \"sed -i 's/sasl_username = \".*\"/sasl_username = \"$IRSSI_USERNAME\"/' ~/.irssi/config\"" "Set irssi username"
+log_result "su - \"$USERNAME\" -c \"sed -i 's/sasl_password = \".*\"/sasl_password = \"$IRSSI_PASSWORD\"/' ~/.irssi/config\"" "Set irssi password"
+log_result "su - \"$USERNAME\" -c \"sed -i 's/nick = \".*\"/nick = \"$IRSSI_USERNAME\"/' ~/.irssi/config\"" "Set irssi nick"
+
+logo "Make binary files executable..."
+echo "==== Binary Permissions" >> "$LOG_FILE"
+log_result "su - \"$USERNAME\" -c \"chmod -R 755 ~/bin\"" "Set bin permissions"
+
+logo "Vimy configuration..."
+echo "==== Vimy Configuration" >> "$LOG_FILE"
+log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/vimy ~/.config/nvim\"" "Clone vimy"
+log_result "su - \"$USERNAME\" -c \"git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim\"" "Clone packer.nvim"
+log_result "su - \"$USERNAME\" -c \"nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'\"" "Run PackerSync"
+log_result "su - \"$USERNAME\" -c \"mkdir ~/.config/nvim/session\"" "Create nvim session directory"
+
+logo "Ranger Configuration..."
+echo "==== Ranger Configuration" >> "$LOG_FILE"
+log_result "su - \"$USERNAME\" -c \"git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons\"" "Clone ranger_devicons"
+log_result "su - \"$USERNAME\" -c \"cd ~/.config/ranger/plugins/ranger_devicons && python -m devicons\"" "Install ranger_devicons"
+
+logo "Protonvpn configuration..."
+echo "==== ProtonVPN Configuration" >> "$LOG_FILE"
+log_result "apt install -y openvpn dialog python3-pythondialog" "Install ProtonVPN dependencies"
+log_result "curl -fsSL https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3-3_all.deb -o protonvpn.deb" "Download ProtonVPN package"
+log_result "dpkg -i protonvpn.deb && rm protonvpn.deb" "Install ProtonVPN package"
+log_result "apt update" "Update package list after ProtonVPN"
+log_result "apt install -y protonvpn-cli" "Install ProtonVPN CLI"
+log_result "su - \"$USERNAME\" -c \"protonvpn-cli config --vpn-accelerator enable\"" "Enable VPN accelerator"
+
+logo "Ly configuration..."
+echo "==== Ly Configuration" >> "$LOG_FILE"
+log_result "apt install -y libpam0g-dev libxcb-xkb-dev" "Install Ly dependencies"
+log_result "git clone https://github.com/fairyglade/ly /tmp/ly" "Clone Ly"
+log_result "cd /tmp/ly && make" "Build Ly"
+log_result "cd /tmp/ly && make install" "Install Ly"
+log_result "systemctl enable ly" "Enable Ly service"
+log_result "cd /home/$USERNAME" "Return to user home"
+
+logo "Managing Essential Services..."
+echo "==== Service Management" >> "$LOG_FILE"
+log_result "systemctl disable transmission-daemon" "Disable transmission-daemon"
+log_result "systemctl enable bluetooth" "Enable bluetooth"
+log_result "systemctl enable slock@$USERNAME" "Enable slock for $USERNAME"
+log_result "systemctl enable ly" "Enable ly"
+
+logo "Installing prochot service..."
+echo "==== Prochot Service" >> "$LOG_FILE"
+log_result "cp prochot.service /etc/systemd/system/prochot.service" "Copy prochot service"
+log_result "systemctl enable prochot" "Enable prochot service"
+
+logo "Done - Script finished installing and configuring n3m0's dots!"
+echo "==== Script Completed" >> "$LOG_FILE"
+echo "Finished at $(date)" >> "$LOG_FILE"

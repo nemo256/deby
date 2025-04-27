@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if `protonvpn-cli s | grep -q Connected`;
+then
+    notify-send "  VPN Disconnected!"
+    protonvpn-cli disconnect
+else
+    notify-send "  VPN Connected!"
+    protonvpn-cli connect --fastest
+fi

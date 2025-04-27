@@ -1,0 +1,2058 @@
+Apr 07 01:39 : exception: Failed to open /home/n3m0/.config/mpd/playlists: No such file or directory
+Apr 07 01:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 01:40 : update: removing t.A.T.u. - All The Things She Said (Official Music Video) [8mGBaXPlri8].webm
+Apr 07 01:40 : update: added /t.A.T.u. - All The Things She Said.webm
+Apr 07 01:40 : player: played "t.A.T.u. - All The Things She Said (Official Music Video) [8mGBaXPlri8].webm"
+Apr 07 01:40 : exception: Failed to open /home/n3m0/.config/mpd/playlists: No such file or directory
+Apr 07 01:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 01:44 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 01:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 01:44 : player: played "t.A.T.u. - All The Things She Said.webm"
+Apr 07 01:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 01:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 01:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 01:47 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Apr 07 01:47 : exception: Not playing
+Apr 07 01:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 01:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 01:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 01:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 01:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 01:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 01:51 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 01:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 01:51 : player: played "Air Supply - Even The Nights Are Better.webm"
+Apr 07 01:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 01:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 01:54 : player: played "BEAUZ & Heleen - Alone.webm"
+Apr 07 01:55 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 02:01 : player: played "BEAUZ & Heleen - Alone.webm"
+Apr 07 02:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 02:26 : player: played "BEAUZ & Heleen - Alone.webm"
+Apr 07 16:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 18:15 : player: played "BEAUZ & Heleen - Alone.webm"
+Apr 07 20:31 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:36 : player: played "BEAUZ & Heleen - Alone.webm"
+Apr 07 20:36 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:37 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 20:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:37 : player: played "BEAUZ & Heleen - Alone.webm"
+Apr 07 20:38 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:38 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:38 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:38 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:38 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:38 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:38 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:38 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:38 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:43 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 20:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:43 : player: played "Defqwop - Heart A Fire.webm"
+Apr 07 20:47 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 20:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:47 : player: played "Desireless - Voyage Voyage.webm"
+Apr 07 20:51 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 20:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:51 : player: played "Earth, Wind & Fire - Let's Groove.webm"
+Apr 07 20:53 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:53 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 07 20:57 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 20:57 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 20:57 : player: played "Egzod & Maestro Chives - Royalty.webm"
+Apr 07 20:57 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:02 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 21:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:02 : player: played "Europe - The Final Countdown.webm"
+Apr 07 21:03 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:03 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:04 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 07 21:06 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 21:06 : player: played "Famy - Ava (Speed Up Tiktok Version).webm"
+Apr 07 21:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:08 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 07 21:10 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 21:10 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:10 : player: played "Jo Cohen & Sex Whales - We Are.webm"
+Apr 07 21:14 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 21:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:14 : player: played "Journey - Don't Stop Believin.webm"
+Apr 07 21:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:18 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 21:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:18 : player: played "Lil Wayne - Mirror ft. Bruno Mars.webm"
+Apr 07 21:19 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:22 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 21:22 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:22 : player: played "Matthew Wilder - Break My Stride.webm"
+Apr 07 21:22 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:22 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:22 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:25 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 21:25 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:25 : player: played "NEFFEX - Grateful.webm"
+Apr 07 21:29 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 21:29 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:29 : player: played "Nelly Furtado - Say It Right.webm"
+Apr 07 21:33 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 21:33 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:33 : player: played "NENA ｜ Irgendwie · Irgendwo · Irgendwann.webm"
+Apr 07 21:38 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:40 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 07 21:43 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 21:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:44 : player: played "Unknown Brain - Perfect 10.webm"
+Apr 07 21:47 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Apr 07 21:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:49 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 21:49 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:49 : player: played "BEAUZ & Heleen - Alone.webm"
+Apr 07 21:50 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:50 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:50 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:50 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:50 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:50 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:50 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:50 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:50 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:50 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:50 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:56 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 07 21:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:56 : player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This).webm"
+Apr 07 21:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 21:57 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 07 22:01 : player: played "Famy - Ava (Speed Up Tiktok Version).webm"
+Apr 07 22:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 23:34 : player: played "Famy - Ava (Speed Up Tiktok Version).webm"
+Apr 08 00:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 08 01:42 : player: played "Famy - Ava (Speed Up Tiktok Version).webm"
+Apr 08 13:04 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 08 17:48 : player: played "Famy - Ava (Speed Up Tiktok Version).webm"
+Apr 08 17:48 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Device or resource busy
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 08 17:49 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 08 17:49 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 08 17:49 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 08 17:49 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 08 17:49 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 08 18:12 : player: played "Jo Cohen & Sex Whales - We Are.webm"
+Apr 08 20:24 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 08 20:38 : player: played "Jo Cohen & Sex Whales - We Are.webm"
+Apr 08 20:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 08 22:39 : player: played "Jo Cohen & Sex Whales - We Are.webm"
+Apr 08 22:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 08 23:15 : player: played "Jo Cohen & Sex Whales - We Are.webm"
+Apr 08 23:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 09 01:21 : player: played "Jo Cohen & Sex Whales - We Are.webm"
+Apr 09 18:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 10 02:00 : player: played "Jo Cohen & Sex Whales - We Are.webm"
+Apr 10 12:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 10 13:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 10 13:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 10 13:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 10 13:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 10 13:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 10 13:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 10 13:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 10 13:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 10 13:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 10 13:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 10 13:07 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 10 16:59 : player: played "Nao - Antidote.webm"
+Apr 10 17:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 10 17:39 : player: played "Nao - Antidote.webm"
+Apr 10 17:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 10 18:38 : player: played "Nao - Antidote.webm"
+Apr 10 18:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 10 18:39 : player: played "Nao - Antidote.webm"
+Apr 10 21:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 10 23:08 : player: played "Nao - Antidote.webm"
+Apr 11 22:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 22:14 : player: played "Nao - Antidote.webm"
+Apr 11 22:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+*** pw_stream_update_properties called from wrong context, check thread and locking: Device or resource busy
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Device or resource busy
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:20 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 22:20 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 22:20 : player: played "Air Supply - Even The Nights Are Better.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:23 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 22:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 22:23 : player: played "Alfie Templeman - 3D Feelings.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:26 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 22:26 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 22:26 : player: played "BEAUZ & Heleen - Alone.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:26 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:28 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 11 22:32 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 22:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 22:32 : player: played "Bonnie Tyler - Total Eclipse of the Heart.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:37 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 22:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 22:37 : player: played "Bronski Beat - Smalltown Boy.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:42 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:46 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 22:46 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 22:46 : player: played "Defqwop - Heart A Fire.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:51 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 22:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 22:51 : player: played "Edward Maya & Vika Jigulina - Stereo Love.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:54 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 22:54 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 22:55 : player: played "Egzod & Maestro Chives - Royalty.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:59 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 22:59 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 22:59 : player: played "Eiffel 65 - Blue (Da Ba Dee).webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:59 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 22:59 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:02 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 23:03 : player: played "Famy - Ava (Speed Up Tiktok Version).webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 23:06 : player: played "Flashdance - Final Dance ⧸ What A Feeling (1983).m4a"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:09 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 11 23:10 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 23:10 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 23:10 : player: played "Jo Cohen & Sex Whales - We Are.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:14 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 23:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 23:14 : player: played "Journey - Don't Stop Believin.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:18 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 23:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 23:18 : player: played "JOY - You Got To Learn.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:21 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 23:21 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 23:21 : player: played "Kae Tempest - More Pressure.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:36 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:36 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:36 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:36 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:36 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:36 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:37 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 11 23:41 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 23:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 23:41 : player: played "Nelly Furtado - Say It Right.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:44 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 23:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 23:44 : player: played "Raf Rundell - Always Fly.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:48 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:48 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:48 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:48 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 11 23:52 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 23:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 23:52 : player: played "t.A.T.u. - All The Things She Said.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:55 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 11 23:55 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 23:55 : player: played "Unknown Brain - Perfect 10.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 11 23:58 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Apr 12 22:05 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 12 22:05 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 12 22:05 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 12 22:05 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 12 22:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 12 22:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 12 22:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 13 08:31 : player: played "BEAUZ & Heleen - Alone.webm"
+Apr 13 08:31 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 13 12:23 : player: played "BEAUZ & Heleen - Alone.webm"
+Apr 13 12:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 01:27 : player: played "BEAUZ & Heleen - Alone.webm"
+Apr 14 11:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 11:55 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 11:55 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 11:55 : player: played "BEAUZ & Heleen - Alone.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 11:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 11:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 11:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 11:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 11:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 11:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 11:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 11:58 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 14 12:00 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 12:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 12:00 : player: played "CKay - Love Nwantiti Remix ft. Joeboy & Kuami Eugene [Ah Ah Ah].webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:03 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:03 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:04 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:04 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:07 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 12:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 12:07 : player: played "Egzod & Maestro Chives - Royalty.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:08 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 14 12:11 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:14 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 12:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 12:14 : player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This).webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:18 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 12:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 12:18 : player: played "Falco - Der Kommissar.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:21 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 12:21 : player: played "Famy - Ava (Speed Up Tiktok Version).webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:26 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 12:26 : player: played "Flashdance - Final Dance ⧸ What A Feeling (1983).m4a"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:32 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 12:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 12:32 : player: played "Flashdance - Maniac.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:35 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 12:35 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 12:35 : player: played "Fools Garden - Lemon Tree.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:38 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 12:38 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 12:39 : player: played "GALA - Freed from desire.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:42 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 12:42 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 12:43 : player: played "Jo Cohen & Sex Whales - We Are.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:47 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 12:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 12:47 : player: played "Journey - Don't Stop Believin.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:50 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 12:50 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 12:50 : player: played "JOY - You Got To Learn.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:53 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 12:53 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 12:53 : player: played "Kae Tempest - More Pressure.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:55 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 12:57 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 14 12:59 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 12:59 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 12:59 : player: played "Lil Wayne - Mirror ft. Bruno Mars.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:01 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 13:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 13:01 : player: played "Lost Frequencies - Are You With Me.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:04 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 14 13:04 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 13:04 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 13:04 : player: played "NEFFEX - Grateful.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:08 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 13:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 13:08 : player: played "Nelly Furtado - Say It Right.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:12 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 13:12 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 13:13 : player: played "NENA ｜ Irgendwie · Irgendwo · Irgendwann.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:18 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 13:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 13:18 : player: played "Nico & Vinz - Am I Wrong.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:21 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 13:21 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 13:21 : player: played "Queen - Don't Stop Me Now.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:21 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:21 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:21 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:21 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:22 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 14 13:24 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 13:24 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 13:24 : player: played "Reality - Lost Frequencies.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:25 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:25 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:25 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:25 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:25 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:25 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:25 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:27 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 14 13:28 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 13:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 13:28 : player: played "t.A.T.u. - All The Things She Said.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 14 13:35 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 14 13:35 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 13:36 : player: played "Unknown Brain - Perfect 10.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 15 01:04 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Apr 15 12:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 15 18:57 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Apr 15 20:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 15 21:21 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Apr 16 00:17 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 00:52 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Apr 16 11:17 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 14:30 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Apr 16 14:30 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:33 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:33 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 16 14:37 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 14:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 14:37 : player: played "BEAUZ & Heleen - Alone.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:38 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 16 14:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:41 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 16 14:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:47 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 14:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 14:47 : player: played "Egzod & Maestro Chives - Royalty.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:52 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 14:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 14:52 : player: played "Eiffel 65 - Blue (Da Ba Dee).webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:54 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:54 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:54 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 14:58 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 14:58 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 14:58 : player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This).webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 15:01 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 15:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 15:02 : player: played "Falco - Der Kommissar.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 15:05 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 15:05 : player: played "Famy - Ava (Speed Up Tiktok Version).webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 15:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 15:09 : player: played "Flashdance - Final Dance ⧸ What A Feeling (1983).m4a"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 15:14 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 15:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 15:14 : player: played "Flashdance - Maniac.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 15:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 15:18 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 15:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 15:19 : player: played "GALA - Freed from desire.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 15:23 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 15:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 15:23 : player: played "Grouplove - Deleter.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 15:27 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 15:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 15:27 : player: played "Jo Cohen & Sex Whales - We Are.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 15:31 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 15:31 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 15:31 : player: played "Journey - Don't Stop Believin.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 18:23 : player: played "JOY - You Got To Learn.webm"
+Apr 16 21:10 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 21:12 : player: played "JOY - You Got To Learn.webm"
+Apr 16 21:13 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 21:13 : player: played "JOY - You Got To Learn.webm"
+Apr 16 21:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 21:18 : player: played "JOY - You Got To Learn.webm"
+Apr 16 21:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 21:23 : player: played "JOY - You Got To Learn.webm"
+Apr 16 21:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 21:26 : player: played "JOY - You Got To Learn.webm"
+Apr 16 21:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 21:27 : player: played "JOY - You Got To Learn.webm"
+Apr 16 21:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 21:29 : player: played "JOY - You Got To Learn.webm"
+Apr 16 21:29 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 21:45 : player: played "JOY - You Got To Learn.webm"
+Apr 16 21:46 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 21:48 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 21:48 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 21:48 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 21:52 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 21:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 21:52 : player: played "Lil Wayne - Mirror ft. Bruno Mars.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 21:53 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 21:53 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 21:53 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 21:53 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 21:56 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 21:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 21:56 : player: played "Nao - Antidote.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 21:57 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 16 21:59 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 21:59 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 22:00 : player: played "NEFFEX - Grateful.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 22:03 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 22:03 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 22:03 : player: played "Nelly Furtado - Say It Right.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 22:08 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 22:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 22:08 : player: played "NENA ｜ Irgendwie · Irgendwo · Irgendwann.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 22:09 : exception: Failed to open /home/n3m0/.config/mpd/playlists: No such file or directory
+Apr 16 22:09 : exception: Failed to open /home/n3m0/.config/mpd/playlists: No such file or directory
+Apr 16 22:09 : exception: Failed to open /home/n3m0/.config/mpd/playlists: No such file or directory
+Apr 16 22:09 : exception: Failed to open /home/n3m0/.config/mpd/playlists: No such file or directory
+Apr 16 22:09 : exception: Failed to open /home/n3m0/.config/mpd/playlists: No such file or directory
+Apr 16 22:09 : exception: Failed to open /home/n3m0/.config/mpd/playlists: No such file or directory
+Apr 16 22:09 : exception: Failed to open /home/n3m0/.config/mpd/playlists: No such file or directory
+Apr 16 22:09 : exception: Failed to open /home/n3m0/.config/mpd/playlists: No such file or directory
+Apr 16 22:09 : exception: Failed to open /home/n3m0/.config/mpd/playlists: No such file or directory
+Apr 16 22:13 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 22:13 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 22:13 : player: played "Nico & Vinz - Am I Wrong.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 22:16 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 22:16 : player: played "Queen - Don't Stop Me Now.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 22:20 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 22:20 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 22:21 : player: played "Queen - Under Pressure.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 22:23 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 22:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 22:24 : player: played "Raf Rundell - Always Fly.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 22:26 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 22:26 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 22:26 : player: played "Reality - Lost Frequencies.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 22:29 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 22:29 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 22:29 : player: played "Remi Wolf - Down the Line.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 22:33 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 22:33 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 22:33 : player: played "Rick Astley - Never Gonna Give You Up.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 22:36 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 22:36 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 22:36 : player: played "Rina Sawayama - Comme Des Garçons (Like the Boys).webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 22:40 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 22:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 22:41 : player: played "Scorpions - Wind Of Change.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 22:45 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 22:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 22:45 : player: played "Sigrid - Mirror.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 22:49 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 22:49 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 22:49 : player: played "Starship - Nothing's Gonna Stop Us Now.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 22:53 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 22:53 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 22:53 : player: played "Survivor - Eye Of The Tiger.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 22:57 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 22:57 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 22:57 : player: played "t.A.T.u. - All The Things She Said.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 23:02 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 23:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 23:02 : player: played "The Cranberries - Zombie.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 23:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 23:05 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 16 23:05 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 23:05 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 23:06 : player: played "Unknown Brain - Perfect 10.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 16 23:11 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 16 23:11 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Apr 17 00:05 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 17 00:05 : player: played "4 Non Blondes - What's Up.webm"
+Apr 17 00:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 17 00:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 17 00:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 17 00:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 17 00:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 17 00:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 17 00:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 17 00:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 17 00:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 17 00:18 : player: played "BEAUZ & Heleen - Alone.webm"
+Apr 17 00:19 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 17 01:03 : player: played "BEAUZ & Heleen - Alone.webm"
+Apr 17 10:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 17 20:06 : player: played "BEAUZ & Heleen - Alone.webm"
+Apr 17 20:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 18 00:18 : player: played "BEAUZ & Heleen - Alone.webm"
+Apr 18 21:55 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:18 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 18 23:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 18 23:18 : player: played "BEAUZ & Heleen - Alone.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:22 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 18 23:22 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 18 23:22 : player: played "Bon Jovi - Livin' On A Prayer.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:27 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 18 23:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 18 23:27 : player: played "Bonnie Tyler - Holding Out For A Hero.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:31 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:31 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:31 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:31 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:35 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 18 23:35 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 18 23:35 : player: played "Egzod & Maestro Chives - Royalty.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:37 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 18 23:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:42 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 18 23:42 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 18 23:42 : player: played "Famy - Ava (Speed Up Tiktok Version).webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Device or resource busy
+Apr 18 23:43 : output: Failed to play on "PipeWire Sound Server" (pipewire): invalid message id:2 op:2 (No space left on device)
+*** pw_stream_update_properties called from wrong context, check thread and locking: Device or resource busy
+Apr 18 23:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Device or resource busy
+Apr 18 23:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:43 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 18 23:46 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:46 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:50 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 18 23:50 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 18 23:50 : player: played "JOY - You Got To Learn.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:52 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Apr 18 23:55 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 18 23:55 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 18 23:55 : player: played "Lil Wayne - Mirror ft. Bruno Mars.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:57 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 18 23:57 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 18 23:58 : player: played "Lost Frequencies - Are You With Me.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:59 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:59 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:59 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 18 23:59 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:01 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 19 00:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 19 00:02 : player: played "NEFFEX - Grateful.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:05 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 19 00:05 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 19 00:06 : player: played "Nelly Furtado - Say It Right.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:11 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 19 00:11 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 19 00:11 : player: played "Raf Rundell - Always Fly.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:13 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 19 00:13 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 19 00:13 : player: played "Reality - Lost Frequencies.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:16 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 19 00:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 19 00:16 : player: played "Remi Wolf - Down the Line.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:20 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 19 00:20 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 19 00:20 : player: played "Rick Astley - Never Gonna Give You Up.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:23 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 19 00:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 19 00:23 : player: played "Rina Sawayama - Comme Des Garçons (Like the Boys).webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:27 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Apr 19 00:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 19 00:27 : player: played "t.A.T.u. - All The Things She Said.webm"
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+*** pw_stream_update_properties called from wrong context, check thread and locking: Operation not permitted
+Apr 19 00:35 : player: played "Unknown Brain - Perfect 10.webm"
+Apr 19 20:17 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 15 23:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 15 23:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 15 23:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 15 23:04 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Sep 15 23:04 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 15 23:04 : player: played "Unknown Brain - Perfect 10.webm"
+Sep 15 23:23 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Sep 15 23:24 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 16 11:43 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Sep 16 11:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 19 22:32 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Sep 19 22:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 20 18:23 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Sep 23 21:31 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 23 21:35 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Sep 23 21:36 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 23 22:23 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Sep 23 22:24 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 23 23:15 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Sep 23 23:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 24 00:57 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Sep 24 00:57 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 25 09:48 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Sep 25 09:48 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 05 00:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 05 00:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 05 00:43 : player: played "Sigrid - Mirror.webm"
+Oct 05 00:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 05 21:29 : player: played "Sigrid - Mirror.webm"
+Oct 05 21:29 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 08 00:45 : player: played "Sigrid - Mirror.webm"
+Oct 08 00:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 08 14:42 : player: played "Sigrid - Mirror.webm"
+Oct 08 14:42 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 15 19:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 15 19:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 15 19:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 15 19:39 : player: played "t.A.T.u. - All The Things She Said.webm"
+Oct 15 19:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 18 12:03 : player: played "t.A.T.u. - All The Things She Said.webm"
+Oct 18 12:03 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 20 14:37 : player: played "t.A.T.u. - All The Things She Said.webm"
+Oct 21 21:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 26 00:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 26 21:27 : player: played "t.A.T.u. - All The Things She Said.webm"
+Oct 27 18:12 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 27 18:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 28 09:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 28 11:03 : player: played "t.A.T.u. - All The Things She Said.webm"
+Oct 28 11:03 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 30 11:01 : player: played "t.A.T.u. - All The Things She Said.webm"
+Oct 30 13:53 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 30 14:09 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 30 16:27 : player: played "t.A.T.u. - All The Things She Said.webm"
+Oct 30 16:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 31 09:07 : player: played "t.A.T.u. - All The Things She Said.webm"
+Oct 31 09:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 31 15:00 : player: played "t.A.T.u. - All The Things She Said.webm"
+Oct 31 17:58 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 31 22:10 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 01 13:02 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 01 13:03 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 01 16:13 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 01 17:26 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 01 23:08 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 01 23:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 02 12:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 02 13:57 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 02 13:57 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 03 13:57 : exception: Failed to write to /home/n3m0/.config/mpd/state: No space left on device
+Nov 03 13:57 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 03 13:57 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 03 23:24 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 03 23:24 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 04 13:45 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 04 13:46 : ffmpeg/opus: Could not update timestamps for skipped samples.
+                                                                        Nov 04 14:30 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 04 21:53 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 04 21:54 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 04 23:19 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 04 23:20 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 05 20:27 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 05 20:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 05 21:47 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 06 09:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 06 10:14 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 06 10:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 06 22:03 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 07 14:21 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 07 14:56 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 07 14:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 08 13:56 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 08 13:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 11 00:33 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 11 00:33 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 11 23:43 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 11 23:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 13 17:02 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 13 17:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 14 21:29 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 14 21:30 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 15 00:05 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 15 13:19 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 15 14:08 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 15 14:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 15 14:52 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 15 14:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 15 21:40 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 15 21:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 17 01:03 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 17 01:03 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 17 13:13 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 17 13:13 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 01:18 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 18 01:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 18:19 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 18 18:20 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 18:41 : player: played "t.A.T.u. - All The Things She Said.webm"
+Nov 18 18:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 18:42 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 18:42 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 18:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 18:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 18:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 18:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 18:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 18:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 18:56 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Nov 18 18:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 18:57 : player: played "Daryl Hall & John Oates - Maneater.webm"
+Nov 18 18:57 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 19:01 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Nov 18 19:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 19:01 : player: played "Defqwop - Heart A Fire.webm"
+Nov 18 19:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 19:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 19:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 19:05 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Nov 18 19:08 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Nov 18 19:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 19:09 : player: played "Egzod & Maestro Chives - Royalty.webm"
+Nov 18 19:09 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 19:09 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 19:09 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 19:09 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 19:09 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 19:09 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 19:12 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Nov 18 19:18 : player: played "Famy - Ava (Speed Up Tiktok Version).webm"
+Nov 18 19:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 19:18 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Nov 18 20:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:15 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Nov 18 20:18 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Nov 18 20:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:18 : player: played "GALA - Freed from desire.webm"
+Nov 18 20:22 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Nov 18 20:22 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:22 : player: played "Grouplove - Deleter.webm"
+Nov 18 20:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:24 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Nov 18 20:27 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Nov 18 20:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:27 : player: played "Journey - Don't Stop Believin.webm"
+Nov 18 20:30 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Nov 18 20:30 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:30 : player: played "JOY - You Got To Learn.webm"
+Nov 18 20:33 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Nov 18 20:33 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:33 : player: played "Kae Tempest - More Pressure.webm"
+Nov 18 20:37 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Nov 18 20:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:37 : player: played "Keane - Somewhere Only We Know.webm"
+Nov 18 20:41 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Nov 18 20:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:41 : player: played "Lil Wayne - Mirror ft. Bruno Mars.webm"
+Nov 18 20:44 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Nov 18 20:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:44 : player: played "Lost Frequencies - Are You With Me.webm"
+Nov 18 20:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 18 20:44 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Nov 18 20:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 19 00:28 : player: played "Nelly Furtado - Say It Right.webm"
+Nov 19 00:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 19 13:09 : player: played "Nelly Furtado - Say It Right.webm"
+Nov 19 13:09 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 25 16:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 25 17:37 : player: played "Nelly Furtado - Say It Right.webm"
+Nov 25 17:38 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 25 22:28 : player: played "Nelly Furtado - Say It Right.webm"
+Nov 25 22:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 26 16:44 : player: played "Nelly Furtado - Say It Right.webm"
+Nov 26 16:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 26 23:39 : player: played "Nelly Furtado - Say It Right.webm"
+Nov 26 23:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 27 20:51 : player: played "Nelly Furtado - Say It Right.webm"
+Nov 27 20:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 27 23:32 : player: played "Nelly Furtado - Say It Right.webm"
+Nov 27 23:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 28 23:32 : player: played "Nelly Furtado - Say It Right.webm"
+Nov 28 23:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 02 23:51 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 02 23:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 03 20:52 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 03 20:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 04 23:42 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 04 23:42 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 06 21:09 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 10 15:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 10 18:22 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 10 18:22 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 10 23:26 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 10 23:26 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 11 17:00 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 11 17:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 12 01:49 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 12 01:49 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 12 14:49 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 12 14:49 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 13 14:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 13 18:08 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 13 18:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 14 01:47 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 14 01:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 14 19:39 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 14 19:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 15 01:06 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 15 01:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 15 23:24 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 15 23:24 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 16 14:46 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 16 14:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 20 23:06 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 20 23:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 29 21:00 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 29 21:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 30 23:37 : player: played "Nelly Furtado - Say It Right.webm"
+Dec 30 23:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 01 00:22 : player: played "Nelly Furtado - Say It Right.webm"
+Jan 01 00:22 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 01 13:22 : player: played "Nelly Furtado - Say It Right.webm"
+Jan 01 13:22 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 06 19:00 : player: played "Nelly Furtado - Say It Right.webm"
+Jan 06 19:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 11 23:36 : player: played "Nelly Furtado - Say It Right.webm"
+Jan 12 16:42 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 12 22:12 : player: played "Nelly Furtado - Say It Right.webm"
+Jan 12 22:12 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 19 14:59 : player: played "Nelly Furtado - Say It Right.webm"
+Jan 19 14:59 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 25 15:01 : player: played "Nelly Furtado - Say It Right.webm"
+Jan 25 15:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 26 20:19 : player: played "Nelly Furtado - Say It Right.webm"
+Jan 26 20:19 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 29 18:06 : player: played "Nelly Furtado - Say It Right.webm"
+Jan 29 18:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 31 17:54 : player: played "Nelly Furtado - Say It Right.webm"
+Jan 31 17:54 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Feb 06 02:43 : player: played "Nelly Furtado - Say It Right.webm"
+Feb 06 02:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Feb 06 15:33 : player: played "Nelly Furtado - Say It Right.webm"
+Feb 06 15:33 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Feb 07 15:05 : player: played "Nelly Furtado - Say It Right.webm"
+Feb 07 15:05 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Feb 08 01:35 : player: played "Nelly Furtado - Say It Right.webm"
+Feb 08 01:35 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Feb 08 14:21 : player: played "Nelly Furtado - Say It Right.webm"
+Feb 08 14:21 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Feb 09 18:10 : player: played "Nelly Furtado - Say It Right.webm"
+Feb 09 18:10 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Feb 16 17:47 : player: played "Nelly Furtado - Say It Right.webm"
+Feb 16 17:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Feb 19 20:49 : player: played "Nelly Furtado - Say It Right.webm"
+Feb 19 20:49 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Feb 23 11:09 : player: played "Nelly Furtado - Say It Right.webm"
+Feb 23 11:09 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Feb 24 12:13 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Feb 24 12:47 : player: played "Nelly Furtado - Say It Right.webm"
+Feb 24 12:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Feb 24 14:01 : player: played "Nelly Furtado - Say It Right.webm"
+Feb 24 14:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Feb 24 15:03 : player: played "Nelly Furtado - Say It Right.webm"
+Feb 24 15:03 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Feb 25 23:47 : player: played "Nelly Furtado - Say It Right.webm"
+Feb 25 23:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Feb 26 19:51 : player: played "Nelly Furtado - Say It Right.webm"
+Feb 26 19:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Feb 26 20:11 : player: played "Nelly Furtado - Say It Right.webm"
+Feb 26 20:11 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 08 21:40 : player: played "Nelly Furtado - Say It Right.webm"
+Mar 10 19:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 10 22:09 : player: played "Nelly Furtado - Say It Right.webm"
+Mar 10 22:09 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:21 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:21 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:21 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:21 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:27 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Mar 16 21:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:27 : player: played "NENA ｜ Irgendwie · Irgendwo · Irgendwann.webm"
+Mar 16 21:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:32 : player: played "Whitney Houston - I Wanna Dance With Somebody.webm"
+Mar 16 21:32 : exception: Not playing
+Mar 16 21:32 : exception: Not playing
+Mar 16 21:32 : exception: Not playing
+Mar 16 21:32 : exception: Not playing
+Mar 16 21:32 : exception: Not playing
+Mar 16 21:32 : exception: Not playing
+Mar 16 21:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:36 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Mar 16 21:36 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:36 : player: played "Air Supply - Even The Nights Are Better.webm"
+Mar 16 21:36 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:36 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:39 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Mar 16 21:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:39 : player: played "BEAUZ & Heleen - Alone.webm"
+Mar 16 21:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 16 21:49 : player: played "Defqwop - Heart A Fire.webm"
+Mar 16 21:49 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 23 20:53 : player: played "Defqwop - Heart A Fire.webm"
+Mar 23 20:53 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 23 23:00 : player: played "Defqwop - Heart A Fire.webm"
+Mar 23 23:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 23 23:05 : player: played "Defqwop - Heart A Fire.webm"
+Mar 24 19:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 24 20:35 : player: played "Defqwop - Heart A Fire.webm"
+Mar 26 22:25 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Mar 26 22:59 : player: played "Defqwop - Heart A Fire.webm"
+Mar 26 22:59 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 05 01:56 : player: played "Defqwop - Heart A Fire.webm"
+Apr 05 01:58 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 05 01:58 : player: played "Defqwop - Heart A Fire.webm"
+Apr 05 01:58 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 05 16:10 : player: played "Defqwop - Heart A Fire.webm"
+Apr 05 16:10 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 05 23:49 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 06 00:02 : player: played "Defqwop - Heart A Fire.webm"
+Apr 06 00:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 06 17:20 : player: played "Defqwop - Heart A Fire.webm"
+Apr 06 23:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 00:28 : player: played "Defqwop - Heart A Fire.webm"
+Apr 07 00:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 18:35 : player: played "Defqwop - Heart A Fire.webm"
+Apr 07 18:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 07 18:49 : player: played "Defqwop - Heart A Fire.webm"
+Apr 08 22:33 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 09 00:53 : player: played "Defqwop - Heart A Fire.webm"
+Apr 09 00:53 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 09 17:25 : player: played "Defqwop - Heart A Fire.webm"
+Apr 09 17:26 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 09 20:59 : player: played "Defqwop - Heart A Fire.webm"
+Apr 09 21:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 10 01:12 : player: played "Defqwop - Heart A Fire.webm"
+Apr 10 21:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 10 22:27 : player: played "Defqwop - Heart A Fire.webm"
+Apr 10 22:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 11 17:06 : player: played "Defqwop - Heart A Fire.webm"
+Apr 11 17:12 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 12 00:40 : player: played "Defqwop - Heart A Fire.webm"
+Apr 12 00:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 12 12:52 : player: played "Defqwop - Heart A Fire.webm"
+Apr 12 12:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 12 16:05 : player: played "Defqwop - Heart A Fire.webm"
+Apr 12 16:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 12 21:18 : player: played "Defqwop - Heart A Fire.webm"
+Apr 12 21:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 13 00:55 : player: played "Defqwop - Heart A Fire.webm"
+Apr 13 00:55 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 13 14:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 13 15:27 : player: played "Defqwop - Heart A Fire.webm"
+Apr 13 15:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 13 21:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 01:19 : player: played "Defqwop - Heart A Fire.webm"
+Apr 14 01:19 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 14 21:50 : player: played "Defqwop - Heart A Fire.webm"
+Apr 14 21:50 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 15 13:58 : player: played "Defqwop - Heart A Fire.webm"
+Apr 15 19:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 15 22:14 : player: played "Defqwop - Heart A Fire.webm"
+Apr 15 22:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 16 22:47 : player: played "Defqwop - Heart A Fire.webm"
+Apr 16 22:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 17 22:51 : player: played "Defqwop - Heart A Fire.webm"
+Apr 17 22:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 19 01:00 : player: played "Defqwop - Heart A Fire.webm"
+Apr 19 01:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 20 16:06 : player: played "Defqwop - Heart A Fire.webm"
+Apr 20 16:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 20 23:20 : player: played "Defqwop - Heart A Fire.webm"
+Apr 20 23:21 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 21 13:41 : player: played "Defqwop - Heart A Fire.webm"
+Apr 21 18:46 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 21 20:35 : player: played "Defqwop - Heart A Fire.webm"
+Apr 21 20:35 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 22 21:12 : player: played "Defqwop - Heart A Fire.webm"
+Apr 22 21:13 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 23 14:33 : player: played "Defqwop - Heart A Fire.webm"
+Apr 23 19:58 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 24 01:41 : player: played "Defqwop - Heart A Fire.webm"
+Apr 24 01:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 24 12:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 24 17:02 : player: played "Defqwop - Heart A Fire.webm"
+Apr 24 18:46 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 24 19:31 : player: played "Defqwop - Heart A Fire.webm"
+Apr 24 19:31 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 24 23:40 : player: played "Defqwop - Heart A Fire.webm"
+Apr 25 17:35 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 25 19:12 : player: played "Defqwop - Heart A Fire.webm"
+Apr 25 19:12 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 26 16:04 : player: played "Defqwop - Heart A Fire.webm"
+Apr 26 16:05 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 26 16:06 : player: played "Defqwop - Heart A Fire.webm"
+Apr 26 16:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 26 16:09 : player: played "Defqwop - Heart A Fire.webm"
+Apr 26 16:10 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 26 19:14 : player: played "Defqwop - Heart A Fire.webm"
+Apr 26 19:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 26 19:16 : player: played "Defqwop - Heart A Fire.webm"
+Apr 26 19:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 15:11 : player: played "Defqwop - Heart A Fire.webm"
+Apr 27 17:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 17:25 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 17:26 : player: played "Desireless - Voyage Voyage.webm"
+Apr 27 17:26 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 17:28 : player: played "Desireless - Voyage Voyage.webm"
+Apr 27 21:24 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 21:30 : player: played "Desireless - Voyage Voyage.webm"
+Apr 27 21:30 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 21:30 : player: played "Desireless - Voyage Voyage.webm"
+Apr 27 21:30 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 21:30 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 21:30 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Apr 27 21:31 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 21:31 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Apr 27 21:31 : exception: Failed to open audio output
+Apr 27 21:31 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Apr 27 21:33 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 21:33 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Apr 27 21:33 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Apr 27 21:33 : player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This).webm"
+Apr 27 21:33 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 21:33 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Apr 27 21:34 : exception: Failed to open audio output
+Apr 27 21:34 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 21:34 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Apr 27 21:34 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Apr 27 21:34 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 21:34 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Apr 27 21:36 : player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This).webm"
+Apr 27 21:36 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 21:36 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Apr 27 21:36 : exception: Failed to open audio output
+Apr 27 21:37 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Apr 27 21:37 : exception: Failed to open audio output
+Apr 27 21:37 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Apr 27 21:51 : player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This).webm"
+Apr 27 21:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 22:10 : player: played "Eurythmics, Annie Lennox, Dave Stewart - Sweet Dreams (Are Made Of This).webm"
+Apr 27 22:11 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 22:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 22:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 22:25 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 22:28 : player: played "GALA - Freed from desire.webm"
+Apr 27 22:29 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 22:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 23:11 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 23:11 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 23:36 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 27 23:36 : player: played "JOY - You Got To Learn.webm"
+Apr 27 23:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 28 20:08 : player: played "JOY - You Got To Learn.webm"
+Apr 28 20:09 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 28 20:10 : player: played "JOY - You Got To Learn.webm"
+Apr 28 20:10 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 28 20:10 : player: played "JOY - You Got To Learn.webm"
+Apr 28 20:10 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 28 20:14 : player: played "JOY - You Got To Learn.webm"
+Apr 28 20:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 08:32 : player: played "JOY - You Got To Learn.webm"
+Apr 30 11:46 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 12:05 : player: played "JOY - You Got To Learn.webm"
+Apr 30 12:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Apr 30 12:39 : player: played "JOY - You Got To Learn.webm"
+Apr 30 12:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 01 13:28 : player: played "JOY - You Got To Learn.webm"
+May 01 13:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 01 18:07 : player: played "JOY - You Got To Learn.webm"
+May 01 18:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 01 23:52 : player: played "JOY - You Got To Learn.webm"
+May 01 23:53 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 03 13:53 : player: played "JOY - You Got To Learn.webm"
+May 03 14:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 03 20:45 : player: played "JOY - You Got To Learn.webm"
+May 03 20:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 04 13:44 : player: played "JOY - You Got To Learn.webm"
+May 04 13:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 04 14:56 : player: played "JOY - You Got To Learn.webm"
+May 04 16:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 04 16:45 : player: played "JOY - You Got To Learn.webm"
+May 04 16:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 04 17:31 : player: played "JOY - You Got To Learn.webm"
+May 04 17:31 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 04 18:56 : player: played "JOY - You Got To Learn.webm"
+May 04 18:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 04 20:21 : player: played "JOY - You Got To Learn.webm"
+May 04 20:21 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 10 20:06 : player: played "JOY - You Got To Learn.webm"
+May 10 20:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 10 21:53 : player: played "JOY - You Got To Learn.webm"
+May 10 21:53 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 11 11:28 : player: played "JOY - You Got To Learn.webm"
+May 11 11:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 12 20:00 : player: played "JOY - You Got To Learn.webm"
+May 12 20:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 12 22:39 : player: played "JOY - You Got To Learn.webm"
+May 12 22:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 17 20:36 : player: played "JOY - You Got To Learn.webm"
+May 17 20:36 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 21 20:55 : player: played "JOY - You Got To Learn.webm"
+May 21 20:55 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 24 20:16 : player: played "JOY - You Got To Learn.webm"
+May 24 20:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 25 22:17 : player: played "JOY - You Got To Learn.webm"
+May 25 22:17 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 29 23:05 : player: played "JOY - You Got To Learn.webm"
+May 29 23:05 : ffmpeg/opus: Could not update timestamps for skipped samples.
+May 31 21:29 : player: played "JOY - You Got To Learn.webm"
+Jun 25 08:07 : exception: Failed to open /home/n3m0/.config/mpd/playlists: No such file or directory
+Jun 25 08:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jun 25 08:49 : player: played "a-ha - Take On Me.webm"
+Jun 25 09:25 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jun 25 09:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jun 25 09:57 : player: played "a-ha - Take On Me.webm"
+Jun 25 09:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jun 25 10:54 : player: played "a-ha - Take On Me.webm"
+Jun 25 10:55 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jun 27 09:19 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jun 27 13:09 : player: played "a-ha - Take On Me.webm"
+Jun 28 19:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jun 29 00:21 : player: played "a-ha - Take On Me.webm"
+Jun 29 00:21 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 01 10:26 : player: played "a-ha - Take On Me.webm"
+Jul 01 10:27 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 01 10:28 : exception: Failed to open /home/n3m0/.config/mpd/playlists: No such file or directory
+Jul 01 10:29 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 01 12:53 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 01 12:54 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 01 12:54 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 01 12:54 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 02 22:41 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 02 22:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 03 22:40 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 03 22:40 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 04 23:22 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 04 23:25 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 05 14:43 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 05 14:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 05 14:48 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 05 23:30 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 05 23:31 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 06 03:08 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 06 03:09 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 06 03:09 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 06 03:09 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 06 09:22 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 06 12:17 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 06 12:17 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 06 14:24 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 06 15:00 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 06 15:00 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 06 16:36 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 06 16:36 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 06 21:03 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 06 21:04 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 07 08:15 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 07 13:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 07 13:34 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 07 13:35 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 07 14:03 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 07 18:04 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 07 18:04 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 07 22:33 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 07 22:33 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 08 01:12 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 08 01:12 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 08 08:11 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 08 08:12 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 08 08:57 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 08 08:58 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 08 13:21 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 08 15:39 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 08 15:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 08 15:46 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 09 14:24 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 09 14:24 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 09 15:50 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 09 15:50 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 10 09:06 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 10 09:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 10 11:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 12 13:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 13 01:02 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 13 01:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 13 01:03 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 13 01:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 13 01:02 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 13 01:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 13 08:41 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 13 08:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 13 08:42 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 13 08:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 13 08:41 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 13 08:42 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 20 00:11 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 20 00:11 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 24 00:32 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 24 00:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 27 19:18 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 27 19:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 27 20:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 27 20:45 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 27 20:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jul 28 21:26 : player: played "BEAUZ & Heleen - Alone.webm"
+Jul 28 21:26 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Aug 02 19:57 : player: played "BEAUZ & Heleen - Alone.webm"
+Aug 02 19:57 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Aug 06 21:07 : player: played "BEAUZ & Heleen - Alone.webm"
+Aug 06 21:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Aug 09 16:20 : player: played "BEAUZ & Heleen - Alone.webm"
+Aug 17 10:37 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Aug 17 10:48 : player: played "BEAUZ & Heleen - Alone.webm"
+Aug 17 10:48 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Aug 18 22:54 : player: played "BEAUZ & Heleen - Alone.webm"
+Aug 18 22:54 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Aug 23 23:15 : player: played "BEAUZ & Heleen - Alone.webm"
+Aug 23 23:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Aug 23 23:16 : player: played "BEAUZ & Heleen - Alone.webm"
+Aug 23 23:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Aug 23 23:17 : player: played "BEAUZ & Heleen - Alone.webm"
+Aug 23 23:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Aug 26 10:59 : player: played "BEAUZ & Heleen - Alone.webm"
+Aug 26 10:59 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Aug 28 15:27 : player: played "BEAUZ & Heleen - Alone.webm"
+Aug 28 15:29 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Aug 28 16:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 05 10:33 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 05 15:31 : player: played "BEAUZ & Heleen - Alone.webm"
+Sep 05 15:31 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 05 15:33 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 10 10:49 : player: played "BEAUZ & Heleen - Alone.webm"
+Sep 10 10:49 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Sep 10 11:46 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 04 00:18 : player: played "BEAUZ & Heleen - Alone.webm"
+Oct 04 00:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 04 18:02 : player: played "BEAUZ & Heleen - Alone.webm"
+Oct 04 18:03 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 04 23:51 : player: played "BEAUZ & Heleen - Alone.webm"
+Oct 04 23:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 05 00:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 11 17:57 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 11 18:04 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 12 00:04 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 12 00:07 : player: played "BEAUZ & Heleen - Alone.webm"
+Oct 12 00:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 18 09:05 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 19 10:19 : player: played "BEAUZ & Heleen - Alone.webm"
+Oct 19 10:19 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 19 12:23 : player: played "BEAUZ & Heleen - Alone.webm"
+Oct 19 12:24 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 19 14:35 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 19 16:30 : player: played "BEAUZ & Heleen - Alone.webm"
+Oct 19 16:30 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 19 21:45 : player: played "BEAUZ & Heleen - Alone.webm"
+Oct 19 21:46 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 25 13:42 : player: played "BEAUZ & Heleen - Alone.webm"
+Oct 25 13:42 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 25 19:44 : player: played "BEAUZ & Heleen - Alone.webm"
+Oct 25 19:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 25 20:02 : player: played "BEAUZ & Heleen - Alone.webm"
+Oct 25 20:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Oct 26 14:35 : player: played "BEAUZ & Heleen - Alone.webm"
+Oct 26 14:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 10 16:13 : player: played "BEAUZ & Heleen - Alone.webm"
+Nov 10 16:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 10 18:04 : player: played "BEAUZ & Heleen - Alone.webm"
+Nov 10 18:04 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 10 18:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 12 12:04 : player: played "BEAUZ & Heleen - Alone.webm"
+Nov 12 12:04 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 12 12:04 : player: played "BEAUZ & Heleen - Alone.webm"
+Nov 12 12:04 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 23 13:48 : player: played "BEAUZ & Heleen - Alone.webm"
+Nov 23 14:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 23 14:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 25 23:06 : player: played "BEAUZ & Heleen - Alone.webm"
+Nov 25 23:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 27 19:32 : player: played "BEAUZ & Heleen - Alone.webm"
+                                                                             Nov 27 19:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 28 19:53 : player: played "BEAUZ & Heleen - Alone.webm"
+Nov 28 20:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 28 20:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 29 17:34 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 29 19:03 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 29 21:28 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 29 21:46 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Nov 29 22:26 : player: played "BEAUZ & Heleen - Alone.webm"
+Nov 29 22:26 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 01 08:50 : player: played "BEAUZ & Heleen - Alone.webm"
+Dec 01 08:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 01 10:19 : player: played "BEAUZ & Heleen - Alone.webm"
+Dec 01 10:26 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 01 14:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 02 11:36 : player: played "BEAUZ & Heleen - Alone.webm"
+Dec 02 12:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 02 13:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 02 13:07 : player: played "BEAUZ & Heleen - Alone.webm"
+Dec 02 13:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 02 13:09 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 02 13:11 : player: played "BEAUZ & Heleen - Alone.webm"
+Dec 02 13:11 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 04 11:05 : player: played "BEAUZ & Heleen - Alone.webm"
+Dec 04 11:05 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 06 21:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 06 21:24 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 06 21:44 : player: played "a-ha - Take On Me.webm"
+Dec 06 21:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 07 00:35 : player: played "a-ha - Take On Me.webm"
+Dec 07 00:35 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 07 11:45 : player: played "a-ha - Take On Me.webm"
+Dec 07 11:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 07 16:07 : player: played "a-ha - Take On Me.webm"
+Dec 07 16:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 07 16:07 : player: played "a-ha - Take On Me.webm"
+Dec 07 16:07 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 07 20:03 : player: played "a-ha - Take On Me.webm"
+Dec 07 20:03 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 10 15:45 : player: played "a-ha - Take On Me.webm"
+Dec 10 15:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 10 20:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 10 22:08 : player: played "a-ha - Take On Me.webm"
+Dec 10 22:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 10 23:34 : player: played "a-ha - Take On Me.webm"
+Dec 10 23:34 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 11 14:04 : player: played "a-ha - Take On Me.webm"
+Dec 11 14:16 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 11 15:47 : player: played "a-ha - Take On Me.webm"
+Dec 11 20:46 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 11 22:45 : player: played "a-ha - Take On Me.webm"
+Dec 12 08:34 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 12 15:38 : player: played "a-ha - Take On Me.webm"
+Dec 12 15:38 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 14 05:55 : exception: Failed to write to /home/n3m0/.config/mpd/state: No space left on device
+Dec 14 05:55 : player: played "a-ha - Take On Me.webm"
+Dec 14 05:57 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 14 05:58 : player: played "a-ha - Take On Me.webm"
+Dec 14 05:59 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 14 18:30 : player: played "a-ha - Take On Me.webm"
+Dec 14 18:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 14 18:32 : player: played "a-ha - Take On Me.webm"
+Dec 14 18:32 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 14 18:35 : player: played "a-ha - Take On Me.webm"
+Dec 14 18:35 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Dec 14 18:43 : player: played "a-ha - Take On Me.webm"
+Dec 14 18:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+                                                       Jan 09 22:37 : exception: Failed to open /home/n3m0/.config/mpd/playlists: No such file or directory
+Jan 09 22:38 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:41 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:47 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:48 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:52 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Jan 09 22:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:52 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:52 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Jan 09 22:56 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Jan 09 22:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 22:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:01 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:06 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Jan 09 23:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:06 : player: played "Lil Wayne - Mirror ft. Bruno Mars.webm"
+Jan 09 23:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:06 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:10 : pipewire_output: Decoder is too slow; playing silence to avoid xrun
+Jan 09 23:10 : ffmpeg/opus: Could not update timestamps for discarded samples.
+Jan 09 23:10 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:10 : player: played "Nao - Antidote.webm"
+Jan 09 23:17 : player: played "NEFFEX - Grateful.webm"
+Jan 09 23:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 09 23:18 : player: played "NEFFEX - Grateful.webm"
+Jan 09 23:18 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 10 17:12 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Jan 10 17:12 : exception: Failed to open audio output
+Jan 10 17:12 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Jan 10 17:12 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Jan 10 17:12 : exception: Failed to open audio output
+Jan 10 17:13 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Jan 10 17:13 : exception: Failed to open audio output
+Jan 10 17:13 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Jan 10 19:23 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 10 20:22 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 10 20:23 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Jan 10 22:26 : player: played "NEFFEX - Grateful.webm"
+Jan 11 18:54 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 11 18:55 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Jan 11 20:51 : player: played "NEFFEX - Grateful.webm"
+Jan 11 20:51 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 13 11:28 : player: played "NEFFEX - Grateful.webm"
+Jan 13 11:30 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 13 15:38 : player: played "NEFFEX - Grateful.webm"
+Jan 13 15:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 13 15:44 : player: played "NEFFEX - Grateful.webm"
+Jan 13 15:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 14 09:08 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 14 15:02 : player: played "NEFFEX - Grateful.webm"
+Jan 14 15:03 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 15 09:44 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 15 09:45 : player: played "NEFFEX - Grateful.webm"
+Jan 15 09:45 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 15 10:02 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 15 15:56 : player: played "NEFFEX - Grateful.webm"
+Jan 15 15:56 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 15 20:53 : player: played "NEFFEX - Grateful.webm"
+Jan 15 20:53 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 16 09:58 : player: played "NEFFEX - Grateful.webm"
+Jan 16 10:14 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 16 15:39 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Jan 16 15:39 : exception: Failed to open audio output
+Jan 16 15:39 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Jan 16 15:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 16 15:39 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Jan 16 15:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 16 15:39 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Jan 16 15:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 16 15:39 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Jan 16 15:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 16 15:39 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Jan 16 15:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 16 15:39 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Jan 16 15:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 16 15:39 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Jan 16 15:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 16 15:39 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Jan 16 15:39 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 16 15:39 : output: Failed to play on "PipeWire Sound Server" (pipewire): no target node available
+Jan 16 15:54 : player: played "Queen - Don't Stop Me Now.webm"
+Jan 16 15:55 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 16 22:22 : player: played "Queen - Don't Stop Me Now.webm"
+Jan 16 22:22 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 17 21:38 : player: played "Queen - Don't Stop Me Now.webm"
+Jan 17 21:38 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 18 14:49 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 18 17:48 : player: played "Queen - Don't Stop Me Now.webm"
+Jan 18 17:48 : ffmpeg/opus: Could not update timestamps for skipped samples.
+Jan 18 21:42 : player: played "Queen - Don't Stop Me Now.webm"
+Jan 18 21:43 : ffmpeg/opus: Could not update timestamps for skipped samples.
+                                                               Jan 22 21:03 : exception: Not playing
