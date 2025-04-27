@@ -84,12 +84,12 @@ fi
 # Update package list
 logo "Updating package list..."
 echo "=== Update Package List" >> "$LOG_FILE"
-log_result "apt update" "Update package list" || exit 1
+log_result "apt update" "Update package list"
 
 # Install build essentials and git for compiling software
 logo "Installing build essentials and git..."
 echo "=== Install Build Essentials" >> "$LOG_FILE"
-log_result "apt install -y build-essential git curl" "Install build essentials and git" || exit 1
+log_result "apt install -y build-essential git curl" "Install build essentials and git"
 
 if [[ ! -f "packages" ]]; then
     logo "Error: packages file not found!"
@@ -106,12 +106,12 @@ do
         continue
     fi
     logo "Installing: $package..."
-    log_result "apt install -y \"$package\"" "Install $package" || exit 1
+    log_result "apt install -y \"$package\"" "Install $package"
 done < packages
 
 logo "Switch shell to '${SHELL}'..."
 echo "=== Shell Configuration" >> "$LOG_FILE"
-log_result "chsh -s \"$SHELL\" root && chsh -s \"$SHELL\" \"$USERNAME\"" "Set shells" || exit 1
+log_result "chsh -s \"$SHELL\" root && chsh -s \"$SHELL\" \"$USERNAME\"" "Set shells"
 
 logo "Setting keymap and console font..."
 echo "=== Keymap and Console Font" >> "$LOG_FILE"
@@ -122,36 +122,36 @@ echo "=== Keymap and Console Font" >> "$LOG_FILE"
     log_result "echo 'CHARMAP=UTF-8' >> /etc/default/console-setup" "Set console charset" &&
     log_result "dpkg-reconfigure -f noninteractive keyboard-configuration" "Apply keyboard configuration" &&
     log_result "dpkg-reconfigure -f noninteractive console-setup" "Apply console setup"
-} || exit 1
+} || echo "Keymap and console font: Error" >> "$LOG_FILE"
 
 logo "Adding no password sudo rights for $USERNAME..."
 echo "=== Sudo Configuration" >> "$LOG_FILE"
-log_result "echo \"$USERNAME ALL=(ALL:ALL) NOPASSWD: ALL\" > /etc/sudoers.d/nopasswd_sudo && chmod 440 /etc/sudoers.d/nopasswd_sudo" "Set sudo rights" || exit 1
+log_result "echo \"$USERNAME ALL=(ALL:ALL) NOPASSWD: ALL\" > /etc/sudoers.d/nopasswd_sudo && chmod 440 /etc/sudoers.d/nopasswd_sudo" "Set sudo rights"
 
 logo "Adding yamete kudasai sound on usb mount / unmount..."
 echo "=== USB Sound Configuration" >> "$LOG_FILE"
-log_result "echo -ne \"KERNEL==\\\"sd*\\\", SUBSYSTEM==\\\"block\\\", ENV{DEVTYPE}==\\\"partition\\\", ACTION==\\\"add\\\", ENV{ID_FS_TYPE}!=\\\"vfat\\\", ENV{ID_FS_USAGE}==\\\"filesystem\\\", RUN+=\\\"/usr/bin/aplay /home/$USERNAME/bin/sound/yamete.wav\\\"\\nKERNEL==\\\"sd*\\\", SUBSYSTEM==\\\"block\\\", ENV{DEVTYPE}==\\\"partition\\\", ACTION==\\\"remove\\\", ENV{ID_FS_TYPE}!=\\\"vfat\\\", ENV{ID_FS_USAGE}==\\\"filesystem\\\", RUN+=\\\"/usr/bin/aplay /home/$USERNAME/bin/sound/ahh.wav\\\"\\n\" > /etc/udev/rules.d/99-usb-sound.rules && udevadm control --reload-rules" "Set USB sound rules" || exit 1
+log_result "echo -ne \"KERNEL==\\\"sd*\\\", SUBSYSTEM==\\\"block\\\", ENV{DEVTYPE}==\\\"partition\\\", ACTION==\\\"add\\\", ENV{ID_FS_TYPE}!=\\\"vfat\\\", ENV{ID_FS_USAGE}==\\\"filesystem\\\", RUN+=\\\"/usr/bin/aplay /home/$USERNAME/bin/sound/yamete.wav\\\"\\nKERNEL==\\\"sd*\\\", SUBSYSTEM==\\\"block\\\", ENV{DEVTYPE}==\\\"partition\\\", ACTION==\\\"remove\\\", ENV{ID_FS_TYPE}!=\\\"vfat\\\", ENV{ID_FS_USAGE}==\\\"filesystem\\\", RUN+=\\\"/usr/bin/aplay /home/$USERNAME/bin/sound/ahh.wav\\\"\\n\" > /etc/udev/rules.d/99-usb-sound.rules && udevadm control --reload-rules" "Set USB sound rules"
 
 logo "Automount USB drive..."
 echo "=== USB Automount" >> "$LOG_FILE"
-log_result "echo 'UUID=CA18-653E /mnt vfat noauto,nofail,systemd.automount,systemd.idle-timeout=2,systemd.device-timeout=2 0 0' >> /etc/fstab && systemctl daemon-reload && systemctl restart local-fs.target" "Set USB automount" || exit 1
+log_result "echo 'UUID=CA18-653E /mnt vfat noauto,nofail,systemd.automount,systemd.idle-timeout=2,systemd.device-timeout=2 0 0' >> /etc/fstab && systemctl daemon-reload && systemctl restart local-fs.target" "Set USB automount"
 
 logo "Disabling Screen Tear..."
 echo "=== Screen Tear Configuration" >> "$LOG_FILE"
-log_result "mkdir -p /etc/X11/xorg.conf.d && echo -ne 'Section \"Device\"\n  Identifier \"Intel Graphics\"\n  Driver \"intel\"\n  Option \"TearFree\" \"true\"\nEndSection\n' > /etc/X11/xorg.conf.d/20-intel.conf" "Set screen tear config" || exit 1
+log_result "mkdir -p /etc/X11/xorg.conf.d && echo -ne 'Section \"Device\"\n  Identifier \"Intel Graphics\"\n  Driver \"intel\"\n  Option \"TearFree\" \"true\"\nEndSection\n' > /etc/X11/xorg.conf.d/20-intel.conf" "Set screen tear config"
 
 logo "Updating Touchpad Configuration..."
 echo "=== Touchpad Configuration" >> "$LOG_FILE"
-log_result "echo -ne 'Section \"InputClass\"\n    Identifier \"libinput touchpad catchall\"\n    MatchIsTouchpad \"on\"\n    MatchDevicePath \"/dev/input/event*\"\n    Option \"Tapping\" \"True\"\n    Option \"TappingDrag\" \"True\"\n    Option \"ScrollMethod\" \"Twofinger\"\n    Option \"NaturalScrolling\" \"False\"\n    Option \"DisableWhileTyping\" \"False\"\n    Driver \"libinput\"\nEndSection\n' > /etc/X11/xorg.conf.d/40-libinput.conf" "Set touchpad config" || exit 1
+log_result "echo -ne 'Section \"InputClass\"\n    Identifier \"libinput touchpad catchall\"\n    MatchIsTouchpad \"on\"\n    MatchDevicePath \"/dev/input/event*\"\n    Option \"Tapping\" \"True\"\n    Option \"TappingDrag\" \"True\"\n    Option \"ScrollMethod\" \"Twofinger\"\n    Option \"NaturalScrolling\" \"False\"\n    Option \"DisableWhileTyping\" \"False\"\n    Driver \"libinput\"\nEndSection\n' > /etc/X11/xorg.conf.d/40-libinput.conf" "Set touchpad config"
 
 logo "Slock Configuration..."
 echo "=== Slock Configuration" >> "$LOG_FILE"
-log_result "echo -ne '[Unit]\nDescription=Lock X session using slock for user %i\nBefore=sleep.target\n\n[Service]\nUser=%i\nEnvironment=DISPLAY=:0\nExecStartPre=/usr/bin/xset dpms force suspend\nExecStart=/usr/local/bin/slock\n\n[Install]\nWantedBy=sleep.target\n' > /etc/systemd/system/slock@.service" "Set slock service" || exit 1
+log_result "echo -ne '[Unit]\nDescription=Lock X session using slock for user %i\nBefore=sleep.target\n\n[Service]\nUser=%i\nEnvironment=DISPLAY=:0\nExecStartPre=/usr/bin/xset dpms force suspend\nExecStart=/usr/local/bin/slock\n\n[Install]\nWantedBy=sleep.target\n' > /etc/systemd/system/slock@.service" "Set slock service"
 
 logo "Github configuration..."
 echo "=== Github Configuration" >> "$LOG_FILE"
 if [ "$TOKEN" != "None" ]; then
-    log_result "su - \"$USERNAME\" -c \"echo -ne 'https://$USERNAME:$TOKEN@github.com' > ~/.git-credentials && git config --global credential.helper store\"" "Set git config" || exit 1
+    log_result "su - \"$USERNAME\" -c \"echo -ne 'https://$USERNAME:$TOKEN@github.com' > ~/.git-credentials && git config --global credential.helper store\"" "Set git config"
 else
     echo "Github configuration: Ok" >> "$LOG_FILE"
 fi
@@ -167,7 +167,7 @@ echo "=== Font Configuration" >> "$LOG_FILE"
 
 logo "Creating .build folder..."
 echo "=== Build Directory Setup" >> "$LOG_FILE"
-log_result "su - \"$USERNAME\" -c \"mkdir -p ~/.build\"" "Create build directory" || exit 1
+log_result "su - \"$USERNAME\" -c \"mkdir -p ~/.build\"" "Create build directory"
 
 logo "Cloning repositories..."
 echo "=== Cloning Repositories" >> "$LOG_FILE"
@@ -199,25 +199,25 @@ echo "=== Installing Repositories" >> "$LOG_FILE"
     log_result "su - \"$USERNAME\" -c \"cd ~/.build/tremc && make install\"" "Install tremc"
 } || echo "Installing repositories: Error" >> "$LOG_FILE"
 
-# logo "Installing alder..."
-# echo "=== Install Alder" >> "$LOG_FILE"
-# log_result "npm install -g @aweary/alder" "Install alder" || exit 1
-#
-# logo "Installing weather-cli..."
-# echo "=== Install Weather CLI" >> "$LOG_FILE"
-# log_result "npm install -g weather-cli" "Install weather-cli" || exit 1
+logo "Installing alder..."
+echo "=== Install Alder" >> "$LOG_FILE"
+log_result "yarn global add @aweary/alder" "Install alder"
+
+logo "Installing weather-cli..."
+echo "=== Install Weather CLI" >> "$LOG_FILE"
+log_result "yarn global add weather-cli" "Install weather-cli"
 
 logo "Restoring home directory..."
 echo "=== Home Directory Setup" >> "$LOG_FILE"
-log_result "su - \"$USERNAME\" -c \"mkdir -p ~/dl ~/vids ~/work\"" "Create home directories" || exit 1
+log_result "su - \"$USERNAME\" -c \"mkdir -p ~/dl ~/vids ~/work\"" "Create home directories"
 
 logo "Cloning wals..."
 echo "=== Clone Wals" >> "$LOG_FILE"
-log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/wals ~/wals\"" "Clone wals" || exit 1
+log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/wals ~/wals\"" "Clone wals"
 
 logo "Removing default configuration files..."
 echo "=== Configuration Cleanup" >> "$LOG_FILE"
-log_result "su - \"$USERNAME\" -c \"rm -fvr ~/.bash* ~/.gitconfig ~/.config/*\"" "Remove default configs" || exit 1
+log_result "su - \"$USERNAME\" -c \"rm -fvr ~/.bash* ~/.gitconfig ~/.config/*\"" "Remove default configs"
 
 # Get list of programs
 programs=$(find "/root/dots/config" -maxdepth 1 -mindepth 1 -type d -printf "%f\n")
@@ -226,44 +226,20 @@ if [ -n "$programs" ]; then
     logo "Stowing configuration files..."
     for program in ${programs}; do
         if [[ ${program} != "irssi" ]]; then
-            log_result "su - \"$USERNAME\" -c \"stow -vd /root/dots/config/ -t ~ ${program}\"" "Stow $program" || exit 1
+            log_result "su - \"$USERNAME\" -c \"stow -vd /root/dots/config/ -t ~ ${program}\"" "Stow $program"
         fi
     done
 else
     echo "Stowing configurations: Error" >> "$LOG_FILE"
-    exit 1
 fi
-
-# logo "Irssi configuration..."
-# echo "==== Irssi Configuration" >> "$LOG_FILE"
-# log_result "su - \"$USERNAME\" -c \"cp -fvr ~/dots/config/irssi/.irssi ~\"" "Copy irssi config" || exit 1
-# log_result "su - \"$USERNAME\" -c \"sed -i 's/sasl_username = \".*\"/sasl_username = \"$IRSSI_USERNAME\"/' ~/.irssi/config\"" "Set irssi username" || exit 1
-# log_result "su - \"$USERNAME\" -c \"sed -i 's/sasl_password = \".*\"/sasl_password = \"$IRSSI_PASSWORD\"/' ~/.irssi/config\"" "Set irssi password" || exit 1
-# log_result "su - \"$USERNAME\" -c \"sed -i 's/nick = \".*\"/nick = \"$IRSSI_USERNAME\"/' ~/.irssi/config\"" "Set irssi nick" || exit 1
 
 logo "Make binary files executable..."
 echo "=== Binary Permissions" >> "$LOG_FILE"
-log_result "su - \"$USERNAME\" -c \"chmod -R 755 ~/bin\"" "Set bin permissions" || exit 1
-
-# logo "Vimy configuration..."
-# echo "==== Vimy Configuration" >> "$LOG_FILE"
-# log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/vimy ~/.config/nvim\"" "Clone vimy" || exit 1
-# log_result "su - \"$USERNAME\" -c \"git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim\"" "Clone packer.nvim" || exit 1
-# log_result "su - \"$USERNAME\" -c \"nvim --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'\"" "Run PackerSync" || exit 1
-# log_result "su - \"$USERNAME\" -c \"mkdir ~/.config/nvim/session\"" "Create nvim session directory" || exit 1
+log_result "su - \"$USERNAME\" -c \"chmod -R 755 ~/bin\"" "Set bin permissions"
 
 logo "Ranger Configuration..."
 echo "=== Ranger Configuration" >> "$LOG_FILE"
-log_result "su - \"$USERNAME\" -c \"git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons && cd ~/.config/ranger/plugins/ranger_devicons && python -m devicons\"" "Set ranger config" || exit 1
-
-# logo "Protonvpn configuration..."
-# echo "==== ProtonVPN Configuration" >> "$LOG_FILE"
-# log_result "apt install -y openvpn dialog python3-pythondialog" "Install ProtonVPN dependencies" || exit 1
-# log_result "curl -fsSL https://repo.protonvpn.com/debian/dists/stable/main/binary-all/protonvpn-stable-release_1.0.3-3_all.deb -o protonvpn.deb" "Download ProtonVPN package" || exit 1
-# log_result "dpkg -i protonvpn.deb && rm protonvpn.deb" "Install ProtonVPN package" || exit 1
-# log_result "apt update" "Update package list after ProtonVPN" || exit 1
-# log_result "apt install -y protonvpn-cli" "Install ProtonVPN CLI" || exit 1
-# log_result "su - \"$USERNAME\" -c \"protonvpn-cli config --vpn-accelerator enable\"" "Enable VPN accelerator" || exit 1
+log_result "su - \"$USERNAME\" -c \"git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons && cd ~/.config/ranger/plugins/ranger_devicons && python -m devicons\"" "Set ranger config"
 
 logo "Ly configuration..."
 echo "=== Ly Configuration" >> "$LOG_FILE"
@@ -274,15 +250,15 @@ echo "=== Ly Configuration" >> "$LOG_FILE"
     log_result "cd /tmp/ly && make install" "Install Ly" &&
     log_result "systemctl enable ly" "Enable Ly service" &&
     log_result "cd /home/$USERNAME" "Return to user home"
-} || exit 1
+} || echo "Ly configuration: Error" >> "$LOG_FILE"
 
 logo "Managing Essential Services..."
 echo "=== Service Management" >> "$LOG_FILE"
-log_result "systemctl disable transmission-daemon && systemctl enable bluetooth && systemctl enable slock@$USERNAME && systemctl enable ly" "Manage services" || exit 1
+log_result "systemctl disable transmission-daemon && systemctl enable bluetooth && systemctl enable slock@$USERNAME && systemctl enable ly" "Manage services"
 
 logo "Installing prochot service..."
 echo "=== Prochot Service" >> "$LOG_FILE"
-log_result "cp prochot.service /etc/systemd/system/prochot.service && systemctl enable prochot" "Set prochot service" || exit 1
+log_result "cp prochot.service /etc/systemd/system/prochot.service && systemctl enable prochot" "Set prochot service"
 
 logo "Done - Script finished installing and configuring n3m0's dots!"
 echo "==== Script Completed" >> "$LOG_FILE"
