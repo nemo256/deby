@@ -27,7 +27,6 @@ libxinerama1
 libxinerama-dev
 libxrandr-dev
 libharfbuzz-dev
-ly
 man-db
 manpages
 mtools

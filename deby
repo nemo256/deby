@@ -123,11 +123,6 @@ if [[ ! -f "packages" ]]; then
     exit 1
 fi
 
-# Configure Debian Sid for ly
-logo "Configuring Debian Sid repository..."
-echo "=== Configure Debian Sid" >> "$LOG_FILE"
-log_result "echo 'deb http://deb.debian.org/debian sid main' > /etc/apt/sources.list.d/sid.list && echo -e 'Package: *\nPin: release a=sid\nPin-Priority: 100' > /etc/apt/preferences.d/sid && apt update" "Configure Sid repository"
-
 logo "Installing packages..."
 echo "=== Installing Packages" >> "$LOG_FILE"
 while read package
@@ -286,12 +281,12 @@ logo "Installing weather-cli..."
 echo "=== Install Weather CLI" >> "$LOG_FILE"
 log_result "yarnpkg global add weather-cli" "Install weather-cli"
 
-logo "Installing Ly display manager..."
-echo "=== Ly Configuration" >> "$LOG_FILE"
-{
-    log_result "apt install -y ly" "Install Ly" 1 1 &&
-    log_result "systemctl enable ly" "Enable Ly service" 0 1
-} || echo "Ly configuration: Error" >> "$LOG_FILE"
+#logo "Installing Ly display manager..."
+#echo "=== Ly Configuration" >> "$LOG_FILE"
+#{
+#    log_result "apt install -y ly" "Install Ly" 1 1 &&
+#    log_result "systemctl enable ly" "Enable Ly service" 0 1
+#} || echo "Ly configuration: Error" >> "$LOG_FILE"
 
 logo "Restoring home directory..."
 echo "=== Home Directory Setup" >> "$LOG_FILE"
@@ -329,7 +324,7 @@ log_result "su - \"$USERNAME\" -c \"git clone https://github.com/alexanderjeuris
 
 logo "Managing Essential Services..."
 echo "=== Service Management" >> "$LOG_FILE"
-log_result "systemctl enable bluetooth && systemctl enable slock@$USERNAME && systemctl enable ly" "Manage services"
+log_result "systemctl enable bluetooth && systemctl enable slock@$USERNAME" "Manage services"
 
 logo "Installing disable_prochot service..."
 echo "=== Disable Prochot Service" >> "$LOG_FILE"
