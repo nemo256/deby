@@ -31,6 +31,7 @@ openssh-client
 openvpn
 python3-pip
 squashfs-tools
+sudo
 tcpdump
 usbutils
 wireless-tools

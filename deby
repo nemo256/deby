@@ -109,6 +109,10 @@ do
     log_result "apt install -y \"$package\"" "Install $package"
 done < packages
 
+logo "Adding no password sudo rights for $USERNAME..."
+echo "=== Sudo Configuration" >> "$LOG_FILE"
+log_result "echo \"$USERNAME ALL=(ALL:ALL) NOPASSWD: ALL\" > /etc/sudoers.d/nopasswd_sudo && chmod 440 /etc/sudoers.d/nopasswd_sudo" "Set sudo rights"
+
 logo "Switch shell to '${SHELL}'..."
 echo "=== Shell Configuration" >> "$LOG_FILE"
 log_result "chsh -s \"$SHELL\" root && chsh -s \"$SHELL\" \"$USERNAME\"" "Set shells"
@@ -123,10 +127,6 @@ echo "=== Keymap and Console Font" >> "$LOG_FILE"
     log_result "dpkg-reconfigure -f noninteractive keyboard-configuration" "Apply keyboard configuration" &&
     log_result "dpkg-reconfigure -f noninteractive console-setup" "Apply console setup"
 } || echo "Keymap and console font: Error" >> "$LOG_FILE"
-
-logo "Adding no password sudo rights for $USERNAME..."
-echo "=== Sudo Configuration" >> "$LOG_FILE"
-log_result "echo \"$USERNAME ALL=(ALL:ALL) NOPASSWD: ALL\" > /etc/sudoers.d/nopasswd_sudo && chmod 440 /etc/sudoers.d/nopasswd_sudo" "Set sudo rights"
 
 logo "Adding yamete kudasai sound on usb mount / unmount..."
 echo "=== USB Sound Configuration" >> "$LOG_FILE"
@@ -187,16 +187,16 @@ echo "=== Cloning Repositories" >> "$LOG_FILE"
 logo "Installing repositories..."
 echo "=== Installing Repositories" >> "$LOG_FILE"
 {
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build/tily && make clean install\"" "Install tily" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build/st && make clean install\"" "Install st" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build/dmenu && make clean install\"" "Install dmenu" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build/slock && make clean install\"" "Install slock" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build/slstatus && make clean install\"" "Install slstatus" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build/fetchy && make clean install\"" "Install fetchy" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build/ani-cli && chmod +x ani-cli && cp -fvr ani-cli /usr/local/bin/ani-cli\"" "Install ani-cli" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build/tty-clock && make && make install\"" "Install tty-clock" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build/grabc && make && make install\"" "Install grabc" &&
-    log_result "su - \"$USERNAME\" -c \"cd ~/.build/tremc && make install\"" "Install tremc"
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build/tily && make clean && sudo make install\"" "Install tily" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build/st && make clean && sudo make install\"" "Install st" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build/dmenu && make clean && sudo make install\"" "Install dmenu" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build/slock && make clean && sudo make install\"" "Install slock" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build/slstatus && make clean && sudo make install\"" "Install slstatus" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build/fetchy && make clean && sudo make install\"" "Install fetchy" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build/ani-cli && chmod +x ani-cli && sudo cp -fvr ani-cli /usr/local/bin/ani-cli\"" "Install ani-cli" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build/tty-clock && make && sudo make install\"" "Install tty-clock" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build/grabc && make && sudo make install\"" "Install grabc" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build/tremc && sudo make install\"" "Install tremc"
 } || echo "Installing repositories: Error" >> "$LOG_FILE"
 
 logo "Installing alder..."
@@ -247,7 +247,7 @@ echo "=== Ly Configuration" >> "$LOG_FILE"
     log_result "apt install -y libpam0g-dev libxcb-xkb-dev" "Install Ly dependencies" &&
     log_result "git clone https://github.com/fairyglade/ly /tmp/ly" "Clone Ly" &&
     log_result "cd /tmp/ly && make" "Build Ly" &&
-    log_result "cd /tmp/ly && make install" "Install Ly" &&
+    log_result "cd /tmp/ly && sudo make install" "Install Ly" &&
     log_result "systemctl enable ly" "Enable Ly service" &&
     log_result "cd /home/$USERNAME" "Return to user home"
 } || echo "Ly configuration: Error" >> "$LOG_FILE"
