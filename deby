@@ -199,13 +199,13 @@ echo "=== Installing Repositories" >> "$LOG_FILE"
     log_result "su - \"$USERNAME\" -c \"cd ~/.build/tremc && make install\"" "Install tremc"
 } || echo "Installing repositories: Error" >> "$LOG_FILE"
 
-logo "Installing alder..."
-echo "=== Install Alder" >> "$LOG_FILE"
-log_result "npm install -g @aweary/alder" "Install alder" || exit 1
-
-logo "Installing weather-cli..."
-echo "=== Install Weather CLI" >> "$LOG_FILE"
-log_result "npm install -g weather-cli" "Install weather-cli" || exit 1
+# logo "Installing alder..."
+# echo "=== Install Alder" >> "$LOG_FILE"
+# log_result "npm install -g @aweary/alder" "Install alder" || exit 1
+#
+# logo "Installing weather-cli..."
+# echo "=== Install Weather CLI" >> "$LOG_FILE"
+# log_result "npm install -g weather-cli" "Install weather-cli" || exit 1
 
 logo "Restoring home directory..."
 echo "=== Home Directory Setup" >> "$LOG_FILE"
