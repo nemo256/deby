@@ -5,15 +5,19 @@ LOG_FILE="log"
 echo "Deby Script Execution - $(date)" > "$LOG_FILE"
 echo "===================================" >> "$LOG_FILE"
 
-# Log command result
+# Log command result and capture last output line
 function log_result {
     local command="$1"
     local section="$2"
-    if eval "$command" >/dev/null 2>&1; then
+    LAST_OUTPUT=$(eval "$command" > >(tee /tmp/cmd_output) 2>&1; tail -n 1 /tmp/cmd_output || echo "")
+    rm -f /tmp/cmd_output
+    if [ $? -eq 0 ]; then
         echo "$section: Ok" >> "$LOG_FILE"
+        LAST_OUTPUT=${LAST_OUTPUT:-"[No output]"}
         return 0
     else
         echo "$section: Error" >> "$LOG_FILE"
+        LAST_OUTPUT=${LAST_OUTPUT:-"[No output]"}
         return 1
     fi
 }
@@ -29,12 +33,14 @@ function prompt {
     eval $variable=${value:-$default}
 }
 
-# Cool logo message
+# Cool logo message with last command output
 function logo() {
     local text="$1"
 
     local blue=$(tput setaf 4; tput bold)
     local indigo=$(tput setaf 5; tput bold)
+    local gray=$(tput setaf 8)  # ANSI gray
+    local reset=$(tput sgr0)
 
     local screen_width=$(tput cols)
     local logo="
@@ -55,9 +61,8 @@ function logo() {
         printf "%*s%s\n" $((($screen_width - ${#line} - 1) / 2)) "" "$indigo$line"
     done
 
-    printf "\n%*s%s%s%*s\n\n" $((($screen_width - ${#text} - 1) / 2)) "" "$blue" "$text" $((($screen_width + ${#text} + ${#text} - $logo_width) / 2)) ""
-
-    tput sgr0
+    printf "\n%*s%s%s%s\n" $((($screen_width - ${#text} - 1) / 2)) "" "$blue" "$text" "$reset"
+    printf "%*s%s[%s]%s\n\n" $((($screen_width - ${#LAST_OUTPUT} - 2 - 1) / 2)) "" "$gray" "$LAST_OUTPUT" "$reset"
 }
 
 logo "Press any key to continue..."
