@@ -5,20 +5,15 @@ LOG_FILE="log"
 echo "Deby Script Execution - $(date)" > "$LOG_FILE"
 echo "===================================" >> "$LOG_FILE"
 
-# Colors for logging
-GREEN="\033[32m"
-RED="\033[31m"
-RESET="\033[0m"
-
 # Log command result
 function log_result {
     local command="$1"
     local section="$2"
     if eval "$command" >/dev/null 2>&1; then
-        echo "$section: ${GREEN}Ok${RESET}" >> "$LOG_FILE"
+        echo "$section: Ok" >> "$LOG_FILE"
         return 0
     else
-        echo "$section: ${RED}Error${RESET}" >> "$LOG_FILE"
+        echo "$section: Error" >> "$LOG_FILE"
         return 1
     fi
 }
@@ -99,7 +94,7 @@ log_result "apt install -y build-essential git curl" "Install build essentials a
 if [[ ! -f "packages" ]]; then
     logo "Error: packages file not found!"
     echo "==== Check Packages File" >> "$LOG_FILE"
-    echo "Check packages file: ${RED}Error${RESET}" >> "$LOG_FILE"
+    echo "Check packages file: Error" >> "$LOG_FILE"
     exit 1
 fi
 
@@ -111,7 +106,7 @@ do
         continue
     fi
     logo "Installing: $package..."
-    log_result "apt install -y \"$package\"" "Install $package" || exit 1
+    log_result "apt install -y \"$package\"" "Install $package"
 done < packages
 
 logo "Switch shell to '${SHELL}'..."
@@ -124,7 +119,7 @@ echo "==== Keymap and Console Font" >> "$LOG_FILE"
     log_result "echo 'XKBMODEL=pc105' > /etc/default/keyboard" "Set keyboard model" &&
     log_result "echo 'XKBLAYOUT=$KEYMAP' >> /etc/default/keyboard" "Set keymap" &&
     log_result "echo 'FONT=$CONSOLE_FONT' > /etc/default/console-setup" "Set console font" &&
-    log_result "echo 'CHARMAP=UTF-8' >> /etc/default/console-setup" "Set console charset" &&
+    log_result "echo 'CHARMAP=UTF-8' > /etc/default/console-setup" "Set console charset" &&
     log_result "dpkg-reconfigure -f noninteractive keyboard-configuration" "Apply keyboard configuration" &&
     log_result "dpkg-reconfigure -f noninteractive console-setup" "Apply console setup"
 } || exit 1
@@ -158,7 +153,7 @@ echo "==== Github Configuration" >> "$LOG_FILE"
 if [ "$TOKEN" != "None" ]; then
     log_result "su - \"$USERNAME\" -c \"echo -ne 'https://$USERNAME:$TOKEN@github.com' > ~/.git-credentials && git config --global credential.helper store\"" "Set git config" || exit 1
 else
-    echo "Github configuration: ${GREEN}Ok${RESET}" >> "$LOG_FILE"
+    echo "Github configuration: Ok" >> "$LOG_FILE"
 fi
 
 logo "Font configuration..."
@@ -174,7 +169,7 @@ echo "==== Cloning Repositories" >> "$LOG_FILE"
 log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/tily && git clone https://github.com/nemo256/st && git clone https://github.com/nemo256/dmenu && git clone https://github.com/nemo256/slock && git clone https://github.com/nemo256/slstatus && git clone https://github.com/nemo256/fetchy && git clone https://github.com/pystardust/ani-cli && git clone https://github.com/xorg62/tty-clock && git clone https://github.com/muquit/grabc && git clone https://github.com/tremc/tremc\"" "Clone repositories" || exit 1
 
 logo "Installing tily..."
-echo "==== Installing Software" >> "$LOG_FILE"
+echo "==== Amendatory
 log_result "cd tily && make clean install && cd ../st && make clean install && cd ../dmenu && make clean install && cd ../slock && make clean install && cd ../slstatus && make clean install && cd ../fetchy && make clean install && cd ../ani-cli && chmod +x ani-cli && cp -fvr ani-cli /usr/local/bin/ani-cli && cd ../tty-clock && make && make install && cd ../grabc && make && make install && cd ../tremc && make install" "Install software" || exit 1
 
 logo "Installing alder..."
@@ -208,7 +203,7 @@ if [ -n "$programs" ]; then
         fi
     done
 else
-    echo "Stowing configurations: ${RED}Error${RESET}" >> "$LOG_FILE"
+    echo "Stowing configurations: Error" >> "$LOG_FILE"
     exit 1
 fi
 
