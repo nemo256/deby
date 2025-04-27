@@ -17,8 +17,11 @@ f2fs-tools
 fatresize
 jfsutils
 libx11-6
+libx11-dev
 libxft2
+libxft-dev
 libxinerama1
+libxinerama-dev
 man-db
 manpages
 mtools
