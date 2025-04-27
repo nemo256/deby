@@ -9,16 +9,32 @@ echo "===================================" >> "$LOG_FILE"
 function log_result {
     local command="$1"
     local section="$2"
-    LAST_OUTPUT=$(eval "$command" > >(tee /tmp/cmd_output) 2>&1; tail -n 1 /tmp/cmd_output || echo "")
-    rm -f /tmp/cmd_output
-    if [ $? -eq 0 ]; then
-        echo "$section: Ok" >> "$LOG_FILE"
-        LAST_OUTPUT=${LAST_OUTPUT:-"[No output]"}
-        return 0
+    local suppress_output="$3"
+    if [ "$suppress_output" = "1" ]; then
+        LAST_OUTPUT=$(eval "$command" > /tmp/cmd_output 2>&1; tail -n 1 /tmp/cmd_output || echo "")
+        rm -f /tmp/cmd_output
+        if [ $? -eq 0 ]; then
+            echo "$section: Ok" >> "$LOG_FILE"
+            LAST_OUTPUT=${LAST_OUTPUT:-"[No output]"}
+            return 0
+        else
+            echo "$section: Error" >> "$LOG_FILE"
+            LAST_OUTPUT=${LAST_OUTPUT:-"[No output]"}
+            return 1
+        fi
     else
-        echo "$section: Error" >> "$LOG_FILE"
-        LAST_OUTPUT=${LAST_OUTPUT:-"[No output]"}
-        return 1
+        LAST_OUTPUT=$(eval "$command" > >(tee /tmp/cmd_output) 2>&1; tail -n 1 /tmp/cmd_output || echo "")
+        cat /tmp/cmd_output >> "$LOG_FILE"
+        rm -f /tmp/cmd_output
+        if [ $? -eq 0 ]; then
+            echo "$section: Ok" >> "$LOG_FILE"
+            LAST_OUTPUT=${LAST_OUTPUT:-"[No output]"}
+            return 0
+        else
+            echo "$section: Error" >> "$LOG_FILE"
+            LAST_OUTPUT=${LAST_OUTPUT:-"[No output]"}
+            return 1
+        fi
     fi
 }
 
@@ -111,12 +127,24 @@ do
         continue
     fi
     logo "Installing: $package..."
-    log_result "apt install -y \"$package\"" "Install $package"
+    log_result "apt install -y \"$package\"" "Install $package" 1
 done < packages
 
 logo "Adding no password sudo rights for $USERNAME..."
 echo "=== Sudo Configuration" >> "$LOG_FILE"
 log_result "echo \"$USERNAME ALL=(ALL:ALL) NOPASSWD: ALL\" > /etc/sudoers.d/nopasswd_sudo && chmod 440 /etc/sudoers.d/nopasswd_sudo" "Set sudo rights"
+
+logo "Stowing bin directory..."
+echo "=== Stow Bin Directory" >> "$LOG_FILE"
+log_result "su - \"$USERNAME\" -c \"stow -vd /root/dots/config/ -t ~ bin\"" "Stow bin directory"
+
+logo "Adding yamete kudasai sound on usb mount / unmount..."
+echo "=== USB Sound Configuration" >> "$LOG_FILE"
+log_result "echo -ne \"KERNEL==\\\"sd*\\\", SUBSYSTEM==\\\"block\\\", ENV{DEVTYPE}==\\\"partition\\\", ACTION==\\\"add\\\", ENV{ID_FS_TYPE}!=\\\"vfat\\\", ENV{ID_FS_USAGE}==\\\"filesystem\\\", RUN+=\\\"/usr/bin/aplay /home/$USERNAME/bin/sound/yamete.wav\\\"\\nKERNEL==\\\"sd*\\\", SUBSYSTEM==\\\"block\\\", ENV{DEVTYPE}==\\\"partition\\\", ACTION==\\\"remove\\\", ENV{ID_FS_TYPE}!=\\\"vfat\\\", ENV{ID_FS_USAGE}==\\\"filesystem\\\", RUN+=\\\"/usr/bin/aplay /home/$USERNAME/bin/sound/ahh.wav\\\"\\n\" > /etc/udev/rules.d/99-usb-sound.rules && udevadm control --reload-rules" "Set USB sound rules"
+
+logo "Automount USB drive..."
+echo "=== USB Automount" >> "$LOG_FILE"
+log_result "echo 'UUID=CA18-653E /mnt vfat noauto,nofail,systemd.automount,systemd.idle-timeout=2,systemd.device-timeout=2 0 0' >> /etc/fstab && systemctl daemon-reload && systemctl restart local-fs.target" "Set USB automount"
 
 logo "Switch shell to '${SHELL}'..."
 echo "=== Shell Configuration" >> "$LOG_FILE"
@@ -132,14 +160,6 @@ echo "=== Keymap and Console Font" >> "$LOG_FILE"
     log_result "dpkg-reconfigure -f noninteractive keyboard-configuration" "Apply keyboard configuration" &&
     log_result "dpkg-reconfigure -f noninteractive console-setup" "Apply console setup"
 } || echo "Keymap and console font: Error" >> "$LOG_FILE"
-
-logo "Adding yamete kudasai sound on usb mount / unmount..."
-echo "=== USB Sound Configuration" >> "$LOG_FILE"
-log_result "echo -ne \"KERNEL==\\\"sd*\\\", SUBSYSTEM==\\\"block\\\", ENV{DEVTYPE}==\\\"partition\\\", ACTION==\\\"add\\\", ENV{ID_FS_TYPE}!=\\\"vfat\\\", ENV{ID_FS_USAGE}==\\\"filesystem\\\", RUN+=\\\"/usr/bin/aplay /home/$USERNAME/bin/sound/yamete.wav\\\"\\nKERNEL==\\\"sd*\\\", SUBSYSTEM==\\\"block\\\", ENV{DEVTYPE}==\\\"partition\\\", ACTION==\\\"remove\\\", ENV{ID_FS_TYPE}!=\\\"vfat\\\", ENV{ID_FS_USAGE}==\\\"filesystem\\\", RUN+=\\\"/usr/bin/aplay /home/$USERNAME/bin/sound/ahh.wav\\\"\\n\" > /etc/udev/rules.d/99-usb-sound.rules && udevadm control --reload-rules" "Set USB sound rules"
-
-logo "Automount USB drive..."
-echo "=== USB Automount" >> "$LOG_FILE"
-log_result "echo 'UUID=CA18-653E /mnt vfat noauto,nofail,systemd.automount,systemd.idle-timeout=2,systemd.device-timeout=2 0 0' >> /etc/fstab && systemctl daemon-reload && systemctl restart local-fs.target" "Set USB automount"
 
 logo "Disabling Screen Tear..."
 echo "=== Screen Tear Configuration" >> "$LOG_FILE"
@@ -223,9 +243,9 @@ logo "Restoring home directory..."
 echo "=== Home Directory Setup" >> "$LOG_FILE"
 log_result "su - \"$USERNAME\" -c \"mkdir -p ~/dl ~/vids ~/work\"" "Create home directories"
 
-# logo "Cloning wals..."
-# echo "=== Clone Wals" >> "$LOG_FILE"
-# log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/wals ~/wals\"" "Clone wals"
+#logo "Cloning wals..."
+#echo "=== Clone Wals" >> "$LOG_FILE"
+#log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/wals ~/wals\"" "Clone wals"
 
 logo "Removing default configuration files..."
 echo "=== Configuration Cleanup" >> "$LOG_FILE"
@@ -237,7 +257,7 @@ echo "=== Stowing Configurations" >> "$LOG_FILE"
 if [ -n "$programs" ]; then
     logo "Stowing configuration files..."
     for program in ${programs}; do
-        if [[ ${program} != "irssi" ]]; then
+        if [[ ${program} != "irssi" && ${program} != "bin" ]]; then
             log_result "su - \"$USERNAME\" -c \"stow -vd /root/dots/config/ -t ~ ${program}\"" "Stow $program"
         fi
     done
@@ -257,9 +277,9 @@ logo "Managing Essential Services..."
 echo "=== Service Management" >> "$LOG_FILE"
 log_result "systemctl disable transmission-daemon && systemctl enable bluetooth && systemctl enable slock@$USERNAME && systemctl enable ly" "Manage services"
 
-logo "Installing prochot service..."
-echo "=== Prochot Service" >> "$LOG_FILE"
-log_result "cp prochot.service /etc/systemd/system/prochot.service && systemctl enable prochot" "Set prochot service"
+logo "Installing disable_prochot service..."
+echo "=== Disable Prochot Service" >> "$LOG_FILE"
+log_result "cp disable_prochot.service /etc/systemd/system/disable_prochot.service && systemctl enable disable_prochot" "Set disable_prochot service"
 
 logo "Done - Script finished installing and configuring n3m0's dots!"
 echo "==== Script Completed" >> "$LOG_FILE"
