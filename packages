@@ -6,6 +6,7 @@ bind9-dnsutils
 bluez
 brightnessctl
 btrfs-progs
+build-essential
 cmake
 cryptsetup
 dkms
@@ -15,13 +16,17 @@ efibootmgr
 exfatprogs
 f2fs-tools
 fatresize
+fontconfig
 jfsutils
 libx11-6
 libx11-dev
+libxext-dev
 libxft2
 libxft-dev
 libxinerama1
 libxinerama-dev
+libxrandr-dev
+ly
 man-db
 manpages
 mtools
@@ -36,6 +41,7 @@ tcpdump
 usbutils
 wireless-tools
 msr-tools
+xorg-dev
 
 #######################
 #    User specific    #
@@ -45,7 +51,7 @@ docker.io
 dsniff
 dunst
 feh
-# chromium
+chromium
 fzf
 git
 netcat-traditional

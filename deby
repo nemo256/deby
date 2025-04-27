@@ -207,13 +207,20 @@ logo "Installing weather-cli..."
 echo "=== Install Weather CLI" >> "$LOG_FILE"
 log_result "yarn global add weather-cli" "Install weather-cli"
 
+logo "Installing Ly display manager..."
+echo "=== Ly Configuration" >> "$LOG_FILE"
+{
+    log_result "apt install -y ly" "Install Ly" &&
+    log_result "systemctl enable ly" "Enable Ly service"
+} || echo "Ly configuration: Error" >> "$LOG_FILE"
+
 logo "Restoring home directory..."
 echo "=== Home Directory Setup" >> "$LOG_FILE"
 log_result "su - \"$USERNAME\" -c \"mkdir -p ~/dl ~/vids ~/work\"" "Create home directories"
 
-# logo "Cloning wals..."
-# echo "=== Clone Wals" >> "$LOG_FILE"
-# log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/wals ~/wals\"" "Clone wals"
+logo "Cloning wals..."
+echo "=== Clone Wals" >> "$LOG_FILE"
+log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/wals ~/wals\"" "Clone wals"
 
 logo "Removing default configuration files..."
 echo "=== Configuration Cleanup" >> "$LOG_FILE"
@@ -240,17 +247,6 @@ log_result "su - \"$USERNAME\" -c \"chmod -R 755 ~/bin\"" "Set bin permissions"
 logo "Ranger Configuration..."
 echo "=== Ranger Configuration" >> "$LOG_FILE"
 log_result "su - \"$USERNAME\" -c \"git clone https://github.com/alexanderjeurissen/ranger_devicons ~/.config/ranger/plugins/ranger_devicons && cd ~/.config/ranger/plugins/ranger_devicons && python -m devicons\"" "Set ranger config"
-
-logo "Ly configuration..."
-echo "=== Ly Configuration" >> "$LOG_FILE"
-{
-    log_result "apt install -y libpam0g-dev libxcb-xkb-dev" "Install Ly dependencies" &&
-    log_result "git clone https://github.com/fairyglade/ly /tmp/ly" "Clone Ly" &&
-    log_result "cd /tmp/ly && make" "Build Ly" &&
-    log_result "cd /tmp/ly && sudo make install" "Install Ly" &&
-    log_result "systemctl enable ly" "Enable Ly service" &&
-    log_result "cd /home/$USERNAME" "Return to user home"
-} || echo "Ly configuration: Error" >> "$LOG_FILE"
 
 logo "Managing Essential Services..."
 echo "=== Service Management" >> "$LOG_FILE"
