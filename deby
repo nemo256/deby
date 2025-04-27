@@ -160,22 +160,33 @@ logo "Font configuration..."
 echo "==== Font Configuration" >> "$LOG_FILE"
 {
     log_result "mkdir -p /usr/share/fonts/truetype" "Create fonts directory" &&
-    log_result "cd /usr/share/fonts/truetype && curl -fLo 'FiraCodeNerdFont-Bold.ttf' https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/FiraCode/Bold/complete/Fira%20Code%20Bold%20Nerd%20Font%20Complete.ttf" "Download font" &&
+    log_result "cd /usr/share/fonts/truetype && timeout 30s curl -fLo 'FiraCodeNerdFont-Bold.ttf' https://github.com/ryanoasis/nerd-fonts/raw/HEAD/patched-fonts/FiraCode/Bold/complete/Fira%20Code%20Bold%20Nerd%20Font%20Complete.ttf" "Download font" &&
     log_result "fc-cache -fv" "Update font cache" &&
     log_result "cd /home/$USERNAME" "Return to user home"
 } || echo "Font configuration: Error" >> "$LOG_FILE"
 
 logo "Creating .build folder..."
 echo "==== Build Directory Setup" >> "$LOG_FILE"
-log_result "su - \"$USERNAME\" -c \"mkdir -p ~/.build\" && cd /home/$USERNAME/.build" "Create build directory" || exit 1
+log_result "su - \"$USERNAME\" -c \"mkdir -p ~/.build\"" "Create build directory" || exit 1
 
-logo "Cloning tily (Custom dwm fork)..."
+logo "Cloning repositories..."
 echo "==== Cloning Repositories" >> "$LOG_FILE"
-log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/tily && git clone https://github.com/nemo256/st && git clone https://github.com/nemo256/dmenu && git clone https://github.com/nemo256/slock && git clone https://github.com/nemo256/slstatus && git clone https://github.com/nemo256/fetchy && git clone https://github.com/pystardust/ani-cli && git clone https://github.com/xorg62/tty-clock && git clone https://github.com/muquit/grabc && git clone https://github.com/tremc/tremc\"" "Clone repositories" || exit 1
+{
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/tily\"" "Clone tily" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/st\"" "Clone st" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/dmenu\"" "Clone dmenu" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/slock\"" "Clone slock" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/slstatus\"" "Clone slstatus" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/nemo256/fetchy\"" "Clone fetchy" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/pystardust/ani-cli\"" "Clone ani-cli" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/xorg62/tty-clock\"" "Clone tty-clock" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/muquit/grabc\"" "Clone grabc" &&
+    log_result "su - \"$USERNAME\" -c \"cd ~/.build && git clone https://github.com/tremc/tremc\"" "Clone tremc"
+} || echo "Cloning repositories: Error" >> "$LOG_FILE"
 
 logo "Installing tily..."
 echo "==== Installing Software" >> "$LOG_FILE"
-log_result "cd tily && make clean install && cd ../st && make clean install && cd ../dmenu && make clean install && cd ../slock && make clean install && cd ../slstatus && make clean install && cd ../fetchy && make clean install && cd ../ani-cli && chmod +x ani-cli && cp -fvr ani-cli /usr/local/bin/ani-cli && cd ../tty-clock && make && make install && cd ../grabc && make && make install && cd ../tremc && make install" "Install software" || exit 1
+log_result "cd /home/$USERNAME/.build/tily && make clean install && cd ../st && make clean install && cd ../dmenu && make clean install && cd ../slock && make clean install && cd ../slstatus && make clean install && cd ../fetchy && make clean install && cd ../ani-cli && chmod +x ani-cli && cp -fvr ani-cli /usr/local/bin/ani-cli && cd ../tty-clock && make && make install && cd ../grabc && make && make install && cd ../tremc && make install" "Install software" || exit 1
 
 logo "Installing alder..."
 echo "==== Install Alder" >> "$LOG_FILE"
