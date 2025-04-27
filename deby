@@ -211,9 +211,9 @@ logo "Restoring home directory..."
 echo "=== Home Directory Setup" >> "$LOG_FILE"
 log_result "su - \"$USERNAME\" -c \"mkdir -p ~/dl ~/vids ~/work\"" "Create home directories"
 
-logo "Cloning wals..."
-echo "=== Clone Wals" >> "$LOG_FILE"
-log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/wals ~/wals\"" "Clone wals"
+# logo "Cloning wals..."
+# echo "=== Clone Wals" >> "$LOG_FILE"
+# log_result "su - \"$USERNAME\" -c \"git clone https://github.com/nemo256/wals ~/wals\"" "Clone wals"
 
 logo "Removing default configuration files..."
 echo "=== Configuration Cleanup" >> "$LOG_FILE"
